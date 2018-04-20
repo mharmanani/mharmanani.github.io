@@ -1,1 +1,1 @@
-gem "midnight"
+gem "jekyll-theme-midnight"
