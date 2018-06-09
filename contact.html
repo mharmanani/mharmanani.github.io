@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<style>
+
+		.tab {
+		    overflow: hidden;
+		    background-color: #00bcf6;
+		}
+
+		.body {
+			background-color: #303030;
+		}
+
+		.contact-form {
+			align-items: center;
+			align-self: center;
+			text-align: center;
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+		    background-color: inherit;
+		    float: left;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		    padding: 14px 16px;
+		    transition: 0.3s;
+		    font-family: Roboto-Condensed;
+		    src: URL('fonts/Roboto-Condensed.ttf') format('ttf');
+		    font-size: 17px;
+		}
+
+		.subtitle {
+			color: #fff;
+			font-family: Roboto-Condensed;
+			src: URL('fonts/Roboto-Condensed.ttf') format('ttf');
+			font-size: 18pt;
+			font-style: italic;
+			text-align: center;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		    background-color: #19e;
+		}
+
+		.top {
+			color: #00bcf6;
+			font-family: CODE Bold;
+		    src: URL('fonts/CODE Bold.ttf') format('ttf');
+		    font-size: 35pt;
+			font-variant: small-caps;
+		}
+
+		.title {
+				color: #00bcf6;
+				font-family: CODE Light;
+			    src: URL('fonts/CODE Light.ttf') format('ttf');
+			    font-size: 35pt;
+				font-variant: small-caps;
+				letter-spacing: 12pt;
+				text-align: center;
+		}
+
+		.section-content {
+			color: #fff;
+			font-family: Roboto-Regular;
+			src: URL('fonts/Roboto-Regular.ttf') format('ttf');
+			font-size: 12pt;
+		}
+
+		input[type=text], select, textarea {
+		    width: 45%;
+		    padding: 12px;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		    margin-top: 6px;
+		    margin-bottom: 16px;
+		    resize: vertical;
+		}
+
+		input[type=submit] {
+		    background-color: #00bcf6;
+		    color: white;
+		    padding: 12px 20px;
+		    font-size: 20pt;
+		    font-family: Roboto-Condensed;
+			src: URL('fonts/Roboto-Condensed.ttf') format('ttf');
+		    border: none;
+		    border-radius: 4px;
+		    cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		    background-color: #19f;
+		}
+
+		.container {
+		    border-radius: 5px;
+		    background-color: #f2f2f2;
+		    padding: 20px;
+		}
+
+		/* Create an active/current tablink class */
+		.tab button.active {
+		    background-color: #19f;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		    display: none;
+		    padding: 6px 12px;
+		    width: 12px;
+		    border: 1px solid #ccc;
+		    border-top: none;
+		}
+		</style>
+    	<title>Contact</title>	
+	</head>
+	<body class="body">
+		<div class="tab">
+			<button class="tablinks" onclick="location.href='index.html'">Home</button>
+			<button class="tablinks" onclick="location.href='https://github.com/mharmanani'">GitHub</button>
+			<button class="tablinks" onclick="">CV</button>
+			<button class="tablinks" onclick="location.href='contact.html'">Contact</button>
+		</div>
+		<br>
+		<h1 class="title">MOHAMED HARMANANI</h1>
+		<h3 class="subtitle">Get in touch!</h3>
+		<br>
+		<div class="title-separator">
+			<hr>
+		</div>
+		<br>
+		<form class="contact-form" action="mailto:harmanani.mohamed@gmail.com" method="post" enctype="text/plain">
+			<div class="section-content">Full Name</div>
+			<input type="text" name="name"><br><br>
+			<div class="section-content">Email</div>
+			<input type="text" name="mail"><br><br>
+			<div class="section-content">Comments</div>
+			<input type="text" name="feedback" style='height:200px'><br><br>
+			<input type="submit" value="Send">
+		</form>
+	</body>
+</html>

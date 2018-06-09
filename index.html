@@ -1,101 +1,133 @@
-<html><head>
-<style>
-body {font-family: Australia;}
+<html>
+	<head>
+		<style>
+		body {font-family: Australia;}
 
-.header {
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
-}
+		.header {
+		    background-color: #F1F1F1;
+		    text-align: center;
+		    padding: 20px;
+		}
 
-.tab {
-    overflow: hidden;
-    background-color: #00bcf6;
-}
+		.tab {
+		    overflow: hidden;
+		    background-color: #00bcf6;
+		}
 
-.body {
-	background-color: #303030;
-}
+		.body {
+			background-color: #303030;
+		}
 
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
+		/* Style the buttons inside the tab */
+		.tab button {
+		    background-color: inherit;
+		    float: left;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		    padding: 14px 16px;
+		    transition: 0.3s;
+		    font-family: Roboto-Condensed;
+		    src: URL('fonts/Roboto-Condensed.ttf') format('ttf');
+		    font-size: 17px;
+		}
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #19e;
-}
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		    background-color: #19e;
+		}
 
-.top {
-	color: #00bcf6;
-	font-family: CODE Bold;
-    src: URL('fonts/CODE Bold.ttf') format('ttf');
-    font-size: 35pt;
-	font-variant: small-caps;
-}
+		.title-separator {
+			border-width: 10px;
+			border-style: inherit;
+			color: blue;
+		}
 
-.section {
-	color: #11aaff;
-	font-family: CODE Bold;
-    src: URL('fonts/CODE Bold.ttf') format('ttf');
-    font-size: 22pt;
-	font-variant: small-caps;
-	font-style: bold;
-}
+		.title {
+			color: #00bcf6;
+			font-family: CODE Light;
+		    src: URL('fonts/CODE Light.ttf') format('ttf');
+		    font-size: 35pt;
+			font-variant: small-caps;
+			letter-spacing: 12pt;
+			text-align: center;
+		}
 
-.section-content {
-	color: #fff;
-	font-family: Roboto-Regular;
-	src: URL('fonts/Roboto-Regular.ttf') format('ttf');
-	font-size: 12pt;
+		.subtitle {
+			color: #fff;
+			font-family: Roboto-Condensed;
+			src: URL('fonts/Roboto-Condensed.ttf') format('ttf');
+			font-size: 18pt;
+			font-style: italic;
+			text-align: center;
+		}
 
-}
+		.top {
+			color: #00bcf6;
+			font-family: CODE Bold;
+		    src: URL('fonts/CODE Bold.ttf') format('ttf');
+		    font-size: 35pt;
+			font-variant: small-caps;
+		}
 
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #19f;
-}
+		.section {
+			color: #11aaff;
+			font-family: CODE Bold;
+		    src: URL('fonts/CODE Bold.ttf') format('ttf');
+		    font-size: 22pt;
+			font-variant: small-caps;
+		}
 
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    width: 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-</style>
-    <title>M</title>	
-</head>
-<body class="body">
-	<div class="tab">
-	  <button class="tablinks" onclick="location.href='https://mharmanani.github.io'">Home</button>
-	  <button class="tablinks" onclick="location.href='https://mharmanani.github.io/proj.html'">Two</button>
-	  <button class="tablinks" onclick="">Three</button>
-	</div>
-	<h1 class="top">M</h1>
-	<p></p>
-		<div id="content">
-			<h2 class="section">Summary</h2>
-			<p class="section-content">
-				Lorem Ipsum Dolor Sit Ames
-			</p>
-			<hr>
-            <br>
-			<h2 class="section">Section 2</h2>
-			<p class="section-content">Lorem Ipsum Dolor Sit Ames</p>
-			<hr>
-			<br>
-			<h2 class="section">Section 3</h2>
-			<p class="section-content">...</p>
+		.section-content {
+			color: #fff;
+			font-family: Roboto-Regular;
+			src: URL('fonts/Roboto-Regular.ttf') format('ttf');
+			font-size: 12pt;
+		}
+
+		/* Create an active/current tablink class */
+		.tab button.active {
+		    background-color: #19f;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		    display: none;
+		    padding: 6px 12px;
+		    width: 12px;
+		    border: 1px solid #ccc;
+		    border-top: none;
+		}
+		</style>
+		    <title>Mohamed Harmanani</title>	
+	</head>
+	<body class="body">
+		<div class="tab">
+		  <button class="tablinks" onclick="location.href='index.html'">Home</button>
+		  <button class="tablinks" onclick="location.href='https://www.github.com/mharmanani'">GitHub</button>
+		  <button class="tablinks" onclick="">CV</button>
+		  <button class="tablinks" onclick="location.href='contact.html'">Contact</button>
 		</div>
-<hr>
-</body></html>
+		<br>
+		<h1 class="title">MOHAMED HARMANANI</h1>
+		<h3 class="subtitle">About me</h3>
+		<br>
+		<div class="title-separator">
+			<hr>
+		</div>
+		<br>
+		<p></p>
+			<div id="content">
+				<h2 class="section">Summary</h2>
+				<p class="section-content">
+					fwiohf
+				</p>
+	            <br>
+				<h2 class="section">Education</h2>
+				<p class="section-content">Lorem Ipsum Dolor Sit Ames</p>
+				<br>
+				<h2 class="section">Languages</h2>
+				<p class="section-content">...</p>
+			</div>
+	</body>
+</html>
