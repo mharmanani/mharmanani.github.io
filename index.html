@@ -1,133 +1,289 @@
-<html>
-	<head>
-		<style>
-		body {font-family: Australia;}
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
-		.header {
-		    background-color: #F1F1F1;
-		    text-align: center;
-		    padding: 20px;
-		}
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.7;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-		.tab {
-		    overflow: hidden;
-		    background-color: #00bcf6;
-		}
+}
 
-		.body {
-			background-color: #303030;
-		}
+.bgimg-1 {
+  background-image: url("img/water-ocean.jpg");
+  min-height: 100%;
+}
 
-		/* Style the buttons inside the tab */
-		.tab button {
-		    background-color: inherit;
-		    float: left;
-		    border: none;
-		    outline: none;
-		    cursor: pointer;
-		    padding: 14px 16px;
-		    transition: 0.3s;
-		    font-family: Roboto-Condensed;
-		    src: URL('fonts/Roboto-Condensed.ttf') format('ttf');
-		    font-size: 17px;
-		}
+.bgimg-2 {
+  background-image: url("img/bw-mouse-upclose.jpg");
+  min-height: 400px;
+}
 
-		/* Change background color of buttons on hover */
-		.tab button:hover {
-		    background-color: #19e;
-		}
+.bgimg-3 {
+  background-image: url("img/bw-orderly-desk.jpg");
+  min-height: 400px;
+}
 
-		.title-separator {
-			border-width: 10px;
-			border-style: inherit;
-			color: blue;
-		}
+.bgimg-4 {
+  background-image: url("img/laptop-diag.jpg");
+  min-height: 400px;
+}
 
-		.title {
-			color: #00bcf6;
-			font-family: CODE Light;
-		    src: URL('fonts/CODE Light.ttf') format('ttf');
-		    font-size: 35pt;
-			font-variant: small-caps;
-			letter-spacing: 12pt;
-			text-align: center;
-		}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #303030;
+}
 
-		.subtitle {
-			color: #fff;
-			font-family: Roboto-Condensed;
-			src: URL('fonts/Roboto-Condensed.ttf') format('ttf');
-			font-size: 18pt;
-			font-style: italic;
-			text-align: center;
-		}
+.caption span.border {
+  background-color: #303030;
+  color: #00bcf6;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
 
-		.top {
-			color: #00bcf6;
-			font-family: CODE Bold;
-		    src: URL('fonts/CODE Bold.ttf') format('ttf');
-		    font-size: 35pt;
-			font-variant: small-caps;
-		}
+h3 {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font: 22px "Lato", sans-serif;
+  color: #00bcf6;
+}
 
-		.section {
-			color: #11aaff;
-			font-family: CODE Bold;
-		    src: URL('fonts/CODE Bold.ttf') format('ttf');
-		    font-size: 22pt;
-			font-variant: small-caps;
-		}
+.card-header {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 13px "Lato", sans-serif;
+  color: #00bcf6;
+}
 
-		.section-content {
-			color: #fff;
-			font-family: Roboto-Regular;
-			src: URL('fonts/Roboto-Regular.ttf') format('ttf');
-			font-size: 12pt;
-		}
+.card-description {
+  font: 13px;
+}
 
-		/* Create an active/current tablink class */
-		.tab button.active {
-		    background-color: #19f;
-		}
+.timeframe-1 {
+  font-size: 10pt;
+  text-indent: 630pt;
+  padding: 2px;
+  text-align: right;
+}
 
-		/* Style the tab content */
-		.tabcontent {
-		    display: none;
-		    padding: 6px 12px;
-		    width: 12px;
-		    border: 1px solid #ccc;
-		    border-top: none;
-		}
-		</style>
-		    <title>Mohamed Harmanani</title>	
-	</head>
-	<body class="body">
-		<div class="tab">
-		  <button class="tablinks" onclick="location.href='index.html'">Home</button>
-		  <button class="tablinks" onclick="location.href='https://www.github.com/mharmanani'">GitHub</button>
-		  <button class="tablinks" onclick="">CV</button>
-		  <button class="tablinks" onclick="location.href='contact.html'">Contact</button>
-		</div>
-		<br>
-		<h1 class="title">MOHAMED HARMANANI</h1>
-		<h3 class="subtitle">About me</h3>
-		<br>
-		<div class="title-separator">
-			<hr>
-		</div>
-		<br>
-		<p></p>
-			<div id="content">
-				<h2 class="section">Summary</h2>
-				<p class="section-content">
-					fwiohf
-				</p>
-	            <br>
-				<h2 class="section">Education</h2>
-				<p class="section-content">Lorem Ipsum Dolor Sit Ames</p>
-				<br>
-				<h2 class="section">Languages</h2>
-				<p class="section-content">...</p>
-			</div>
-	</body>
-</html>
+.timeframe-2 {
+  font-size: 10pt;
+  text-indent: 550pt;
+  padding: 2px;
+}
+
+.summary {
+  letter-spacing: 1px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #252525;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.card-contain {
+  border-spacing: 0.1px;
+}
+
+.project-table {
+   border-spacing: 32px;
+}
+
+.project-icon {
+  width: 270px; height: 270px;
+  filter: grayscale(50%);
+}
+
+.footnote {
+  font-size: 8pt;
+}
+
+.footnote-contain {
+  align-items: center;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-icon:hover {
+  filter: hue-rotate(20deg);
+}
+
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">MOHAMED HARMANANI</span>
+  </div>
+</div>
+
+<div style="color: #fff;background-color:#303030;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Summary</h3> 
+  <p class="summary">Hello, and welcome to my personal website! My name is Mohamed, I am a young university student with an eagerness to excel, and a profound passion for programming and building efficient, and elegant solutions to complex problems. This website serves to showcase my skills, and document my journey as I venture into the vast and exciting realm of computer science. Scroll down to find out more about me, what I do, and how to get in touch with me.</p>
+  <br>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <a href="files/Mohamed_Harmanani_CV.pdf" style="text-decoration: none;"><span class="border" style="background-color:#00bcf6;font-size:25px;color: #000;">DOWNLOAD CV</span></a>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">Education</h3>
+      <div class="card">
+        <div class="container">
+          <br>
+          <table>
+          <tr>
+            <td><h4 class="card-header"><b>University of Toronto</b></h4></td>
+            <td><h4 class="timeframe-1">2016 - 2020</h4></td>
+          </tr>
+          <tr><td><h5 class="card-subheader">Honours Bachelor of Science</h5></td></tr>
+         </table>
+         <table>
+           <tr>Computer Science Specialist</tr> <br>
+           <tr>Political Science Minor</tr> <br>
+           <tr>cGPA: 3.17 / 4.00</tr> <br>
+           <br>
+           <tr>Relevant courses: </tr> <br>
+            <ul>
+              <li> Software Design</li>
+              <li> Systems Programming</li>
+              <li> Data Structures & Analysis</li>
+              <li> Databases</li>
+              <li> Operating Systems</li>
+              <li> Artificial Intelligence</li>
+            </ul>
+         </table>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#202020;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">Experience</h3>
+    <div class="card">
+        <div class="container">
+          <br>
+          <table class="card-contain">
+          <tr>
+            <td><h4 class="card-header"><b>OGERO Telecommunications</b></h4></td>
+            <td><h4 class="timeframe-2">Apr 2018 - May 2018</h4></td>
+          </tr>
+          <tr><td><h5 class="card-subheader">Software Development Intern</h5></td></tr>
+         </table>
+         <table>
+          <tr>Wrote tools to improve analysis and reporting of data pertaining to enterprise and employee daily performance.</tr> <br>
+          <tr>Implemented algorithms to retrieve, parse, and visualize datasets, with the help of Matplotlib, pandas and NumPy.</tr> <br>
+          <tr>Cut down time spent writing reports by 75%</tr> <br>
+         </table>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #000;">PERSONAL PROJECTS</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#202020;text-align:center;padding:50px 80px;text-align: justify;">
+    <table class="project-table">
+      <tr>
+        <td><img src="img/ttt-board.png" class="project-icon"></td>
+        <td><a href="https://github.com/mharmanani/unbeatable-tictactoe" 
+               style="text-decoration: none";>
+          <h5 class="card-header">Unbeatable Tic-Tac-Toe</h5></a>
+          <p>A game of tic tac toe against an unbeatable artifical agent.</p>
+          <p> The AI makes use of the minimax function to recursively enumerate all possible outcomes, and determines which scenario 
+          hurts the player the most and benefits it the most. </p>
+          <p>I explored a little slice of classical artifical intelligence with this 
+          project, tried my hand at game searching, heuristic functions, and recursion. 
+          I also implemented a simplistic graphical user interface, and used a model-view controller (MVC) architecture.</p>
+        </td>
+      </tr> 
+      <tr>
+        <td><img src="img/ms-paint.png" class="project-icon"></td>
+        <td>
+          <h5 class="card-header">Microsoft Paint Clone</h5>
+          <p>A project for CSC207 - Software Design at UofT. </p>
+          <p>For this assignment, I worked in a group of four and used the SCRUM methodology to collaborate and advance the project.
+          We implemented various features, such as shapes, text, polylines, squiggles, undo/redo, save/load, and more. </p>
+          <p> This project taught me a lot about what it means to work in a team, and how to divide work efficiently. I also learned GUI programming in Java, with Graphics2D, JavaFX, Swing, and AWT.</p> 
+          <p>Since this is an assignment, the source code is <u>not</u> available online.</p>
+        </td>
+      </tr> 
+      <tr>
+        <td><img src="img/markov-text.png" class="project-icon"></td>
+        <td><a href="https://github.com/mharmanani/markov-text-generator" 
+               style="text-decoration: none";>
+          <h5 class="card-header">Randomized Text Generator</h5></a>
+          <p>As indicated by the title, this simple project attempts to produce text by estimating the probability of a given word occurring after another in a text file fed to it as input.</p>
+          <p>While the text produced often makes no sense, I found the project fun to work with, and learned a great deal about Markov chains, which I used to implement the program.</p>
+        </td>
+      </tr> 
+    </table>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #000;">GET IN TOUCH!</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <table class="footnote-contain">
+      <tr>
+        <td><a href="https://www.github.com/mharmanani"><img class="footer-icon" src="img/github_32x32.png"></a></td>
+        <td><a href="mailto:mohamed.harmanani@mail.utoronto.ca"><img class="footer-icon" action="mailto:harmanani.mohamed@gmail.com" src="img/mail_32x32.png"></a></td>
+        <td><a href="https://www.linkedin.com/in/mharmanani"><img class="footer-icon" src="img/in_circle_32x32.png"></a></td>
+      </tr> 
+    </table>
+    <p class="footnote">Website by Mohamed Harmanani</p>
+  </div>
+</div>
+
+</body></html>
