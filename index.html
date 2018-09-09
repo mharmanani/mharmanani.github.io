@@ -10,7 +10,7 @@ body, html {
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.header-img, .separator-img, .project-img, .footer-img {
   position: relative;
   opacity: 0.7;
   background-attachment: fixed;
@@ -20,22 +20,22 @@ body, html {
 
 }
 
-.bgimg-1 {
+.header-img {
   background-image: url("img/water-ocean.jpg");
   min-height: 100%;
 }
 
-.bgimg-2 {
+.separator-img {
   background-image: url("img/bw-mouse-upclose.jpg");
   min-height: 400px;
 }
 
-.bgimg-3 {
+.footer-img {
   background-image: url("img/bw-orderly-desk.jpg");
   min-height: 400px;
 }
 
-.bgimg-4 {
+.project-img {
   background-image: url("img/laptop-diag.jpg");
   min-height: 400px;
 }
@@ -94,20 +94,20 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .header-img, .separator-img, .project-img, .footer-img {
         background-attachment: scroll;
     }
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     background-color: #252525;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
 }
 
 /* Add some padding inside the card container */
@@ -149,7 +149,7 @@ h3 {
 </head>
 <body>
 
-<div class="bgimg-1">
+<div class="header-img">
   <div class="caption">
     <span class="border">MOHAMED HARMANANI</span>
   </div>
@@ -157,11 +157,11 @@ h3 {
 
 <div style="color: #fff;background-color:#303030;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Summary</h3> 
-  <p class="summary">Hello, and welcome to my personal website! My name is Mohamed, I am a young university student with an eagerness to excel, and a profound passion for programming and building efficient, and elegant solutions to complex problems. This website serves to showcase my skills, and document my journey as I venture into the vast and exciting realm of computer science. Scroll down to find out more about me, what I do, and how to get in touch with me.</p>
+  <p class="summary">Hello, and welcome to my personal website! My name is Mohamed, I am a young university student with an eagerness to excel, and a profound passion for programming and building efficient, elegant solutions to complex problems. This website serves to showcase my skills, and document my journey as I venture into the vast and exciting realm of computer science. Scroll down to find out more about me, what I do, and how to get in touch with me.</p>
   <br>
 </div>
 
-<div class="bgimg-2">
+<div class="separator-img">
   <div class="caption">
     <a href="files/Mohamed_Harmanani_CV.pdf" style="text-decoration: none;"><span class="border" style="background-color:#00bcf6;font-size:25px;color: #000;">DOWNLOAD CV</span></a>
   </div>
@@ -182,8 +182,8 @@ h3 {
          </table>
          <table>
            <tr>Computer Science Specialist</tr> <br>
-           <tr>Political Science Minor</tr> <br>
-           <tr>cGPA: 3.17 / 4.00</tr> <br>
+           <tr>Philosophy Minor</tr> <br>
+           <tr>cGPA: 3.10 / 4.00</tr> <br>
            <br>
            <tr>Relevant courses: </tr> <br>
             <ul>
@@ -192,7 +192,6 @@ h3 {
               <li> Data Structures & Analysis</li>
               <li> Databases</li>
               <li> Operating Systems</li>
-              <li> Artificial Intelligence</li>
             </ul>
          </table>
         </div>
@@ -223,7 +222,7 @@ h3 {
   </div>
 </div>
 
-<div class="bgimg-4">
+<div class="project-img">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #000;">PERSONAL PROJECTS</span>
   </div>
@@ -269,7 +268,7 @@ h3 {
   </div>
 </div>
 
-<div class="bgimg-3">
+<div class="footer-img">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #000;">GET IN TOUCH!</span>
   </div>
