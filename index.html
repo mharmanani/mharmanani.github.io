@@ -3,6 +3,34 @@
 <link rel="icon" href="img/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
 body, html {
 
   height: 100%;
@@ -150,6 +178,13 @@ h3 {
 </head>
 <body>
 
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+
 <div class="header-img">
   <div class="caption">
     <span class="border">MOHAMED HARMANANI</span>
@@ -226,7 +261,9 @@ h3 {
 <div class="project-img">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #000;">
-      <a href="projects.html"> PERSONAL PROJECTS</a>
+      <a href="projects.html" style="text-decoration: none;"> 
+        PERSONAL PROJECTS
+      </a>
     </span>
   </div>
 </div>
