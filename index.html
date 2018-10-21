@@ -1,8 +1,152 @@
 <html><head>
 <title>Mohamed Harmanani</title>
 <link rel="icon" href="img/favicon.png">
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Helvetica Neue", sans-serif;
+  color: #777;
+}
+
+.header-img, .separator-img, .project-img, .footer-img {
+  position: relative;
+  opacity: 0.7;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.header-img {
+  background-image: url("img/water-ocean.jpg");
+  min-height: 100%;
+}
+
+.separator-img {
+  background-image: url("img/bw-mouse-upclose.jpg");
+  min-height: 400px;
+}
+
+.footer-img {
+  background-image: url("img/bw-orderly-desk.jpg");
+  min-height: 400px;
+}
+
+.project-img {
+  background-image: url("img/laptop-diag.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #303030;
+}
+
+.caption span.border {
+  background-color: #303030;
+  color: #00bcf6;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font: 22px "Lato", sans-serif;
+  color: #00bcf6;
+}
+
+.card-header {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 13px "Lato", sans-serif;
+  color: #00bcf6;
+}
+
+.card-description {
+  font: 13px;
+}
+
+.timeframe-1 {
+  font-size: 10pt;
+  text-indent: 630pt;
+  padding: 2px;
+  text-align: right;
+}
+
+.timeframe-2 {
+  font-size: 10pt;
+  text-indent: 550pt;
+  padding: 2px;
+}
+
+.summary {
+  letter-spacing: 1px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .header-img, .separator-img, .project-img, .footer-img {
+        background-attachment: scroll;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    background-color: #252525;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.card-contain {
+  border-spacing: 0.1px;
+}
+
+.project-table {
+   border-spacing: 32px;
+}
+
+.project-icon {
+  width: 270px; height: 270px;
+  filter: grayscale(50%);
+}
+
+.footnote {
+  font-size: 8pt;
+}
+
+.footnote-contain {
+  align-items: center;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-icon:hover {
+  filter: hue-rotate(20deg);
+}
+
+</style>
 </head>
 <body>
 
