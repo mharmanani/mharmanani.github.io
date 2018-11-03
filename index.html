@@ -1,152 +1,8 @@
 <html><head>
 <title>Mohamed Harmanani</title>
 <link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Helvetica Neue", sans-serif;
-  color: #777;
-}
-
-.header-img, .separator-img, .project-img, .footer-img {
-  position: relative;
-  opacity: 0.7;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.header-img {
-  background-image: url("img/water-ocean.jpg");
-  min-height: 100%;
-}
-
-.separator-img {
-  background-image: url("img/bw-mouse-upclose.jpg");
-  min-height: 400px;
-}
-
-.footer-img {
-  background-image: url("img/bw-orderly-desk.jpg");
-  min-height: 400px;
-}
-
-.project-img {
-  background-image: url("img/laptop-diag.jpg");
-  min-height: 400px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #303030;
-}
-
-.caption span.border {
-  background-color: #303030;
-  color: #00bcf6;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  font: 22px "Lato", sans-serif;
-  color: #00bcf6;
-}
-
-.card-header {
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font: 13px "Lato", sans-serif;
-  color: #00bcf6;
-}
-
-.card-description {
-  font: 13px;
-}
-
-.timeframe-1 {
-  font-size: 10pt;
-  text-indent: 630pt;
-  padding: 2px;
-  text-align: right;
-}
-
-.timeframe-2 {
-  font-size: 10pt;
-  text-indent: 550pt;
-  padding: 2px;
-}
-
-.summary {
-  letter-spacing: 1px;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .header-img, .separator-img, .project-img, .footer-img {
-        background-attachment: scroll;
-    }
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-    transition: 0.3s;
-    background-color: #252525;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
-}
-
-/* Add some padding inside the card container */
-.container {
-    padding: 2px 16px;
-}
-
-.card-contain {
-  border-spacing: 0.1px;
-}
-
-.project-table {
-   border-spacing: 32px;
-}
-
-.project-icon {
-  width: 270px; height: 270px;
-  filter: grayscale(50%);
-}
-
-.footnote {
-  font-size: 8pt;
-}
-
-.footnote-contain {
-  align-items: center;
-}
-
-.footer-icon {
-  width: 32px;
-  height: 32px;
-}
-
-.footer-icon:hover {
-  filter: hue-rotate(20deg);
-}
-
-</style>
 </head>
 <body>
 
@@ -170,64 +26,73 @@ h3 {
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;">Education</h3>
-      <div class="card">
-        <div class="container">
-          <br>
-          <table>
-          <tr>
-            <td><h4 class="card-header"><b>University of Toronto</b></h4></td>
-            <td><h4 class="timeframe-1">2016 - 2020</h4></td>
-          </tr>
-          <tr><td><h5 class="card-subheader">Honours Bachelor of Science</h5></td></tr>
-         </table>
-         <table>
-           <tr>Computer Science Specialist</tr> <br>
-           <tr>Philosophy Minor</tr> <br>
-           <tr>cGPA: 3.11 / 4.00</tr> <br>
-           <br>
-           <tr>Relevant courses: </tr> <br>
-            <ul>
-              <li> Software Design</li>
-              <li> Systems Programming</li>
-              <li> Data Structures & Analysis</li>
-              <li> Databases</li>
-              <li> Operating Systems</li>
-            </ul>
-         </table>
-        </div>
-      </div>
+    <h3 align="center">Skills</h3>
+    <table class="project-table" align="center">
+      <tr>
+        <td>
+          <img class="tech-skill-icn" src="img/py-logo.png" style=" width: 120px; height:120px;">
+        </td>
+        <td>
+          <img class="tech-skill-icn" src="img/java-logo.png" style=" width: 100px; height:120px;">
+        </td>
+        <td>
+          <img class="tech-skill-icn" src="img/c-logo.png" style=" width: 100px; height:100px;">
+        </td>
+        <td>
+          <img class="tech-skill-icn" src="img/html-logo.png" style=" width: 110px; height:100px;">
+        </td>
+        <td>
+          <img class="tech-skill-icn" src="img/css3-logo.png" style=" width: 110px; height:100px;">
+        </td>
+        <td>
+          <img class="tech-skill-icn" src="img/my-sql-logo.png" style=" width: 120; height:90;">
+        </td>
+      </tr>
+    </table>
+
+    <table class="project-table" align="center">
+      <tr>
+        <td>
+          <img class="tech-skill-icn" src="img/eclipse-logo.svg" style=" width: 80px; height:80px">
+        </td>
+        <td>
+          <img class="tech-skill-icn" src="img/vscode-logo.png" style=" width: 80px; height:80px">
+        </td>
+        <td>
+          <img class="tech-skill-icn" src="img/git-logo.png" style=" width: 80px; height:80px;">
+        </td>
+      </tr> 
+    </table>
+
   </div>
 </div>
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#202020;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;">Experience</h3>
-    <div class="card">
-        <div class="container">
-          <br>
-          <table class="card-contain">
-          <tr>
-            <td><h4 class="card-header"><b>OGERO Telecommunications</b></h4></td>
-            <td><h4 class="timeframe-2">Apr 2018 - May 2018</h4></td>
-          </tr>
-          <tr><td><h5 class="card-subheader">Software Development Intern</h5></td></tr>
-         </table>
-         <table>
-          <tr>Wrote tools to improve analysis and reporting of data pertaining to enterprise and employee daily performance.</tr> <br>
-          <tr>Implemented algorithms to retrieve, parse, and visualize datasets, with the help of Matplotlib, pandas and NumPy.</tr> <br>
-          <tr>Cut down time spent writing reports by 75%</tr> <br>
-         </table>
-        </div>
-      </div>
-  </div>
+    <h3 align="center">Experience</h3>
+    <table class="project-table">
+      <tr>
+        <td>
+          <img class="tech-skill-icn" src="img/ogero-logo.svg" style=" width: 288; height:127;">
+        </td>
+        <td> 
+          <div class="card-header"> Software Developer Intern </div>  
+          <div> (Apr 2018 - May 2018) </div>
+          <ul>
+            <li> Implemented tools to analyze data pertaining to enterprise and employee daily performance with the help of pandas & NumPy </li>
+            <li> Implemented algorithms to fetch, pull, and visualize data for the company's ticketing system </li>
+            <li> Greatly cut down time spent gathering data and writing reports </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
 </div>
 
 <div class="project-img">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #000;">
-      <a href="projects.html" style="text-decoration: none;"> 
-        PERSONAL PROJECTS
+      <a class="caption" href="projects.html" style="text-decoration: none;"> <span class="border" style="background-color:#00bcf6;font-size:25px;color: #000;">
+        PERSONAL PROJECTS</span>
       </a>
     </span>
   </div>
@@ -235,40 +100,21 @@ h3 {
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#202020;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 align="center">Education</h3>
     <table class="project-table">
       <tr>
-        <td><img src="img/ttt-board.png" class="project-icon"></td>
-        <td><a href="https://github.com/mharmanani/unbeatable-tictactoe" 
-               style="text-decoration: none";>
-          <h5 class="card-header">Unbeatable Tic-Tac-Toe</h5></a>
-          <p>A game of tic tac toe against an unbeatable artifical agent.</p>
-          <p> The AI makes use of the minimax function to recursively enumerate all possible outcomes, and determines which scenario 
-          hurts the player the most and benefits it the most. </p>
-          <p>I explored a little slice of classical artifical intelligence with this 
-          project, tried my hand at game searching, heuristic functions, and recursion. 
-          I also implemented a simplistic graphical user interface, and used a model-view controller (MVC) architecture.</p>
-        </td>
-      </tr> 
-      <tr>
-        <td><img src="img/ms-paint.png" class="project-icon"></td>
         <td>
-          <h5 class="card-header">Microsoft Paint Clone</h5>
-          <p>A project for CSC207 - Software Design at UofT. </p>
-          <p>For this assignment, I worked in a group of four and used the SCRUM methodology to collaborate and advance the project.
-          We implemented various features, such as shapes, text, polylines, squiggles, undo/redo, save/load, and more. </p>
-          <p> This project taught me a lot about what it means to work in a team, and how to divide work efficiently. I also learned GUI programming in Java, with Graphics2D, JavaFX, Swing, and AWT.</p> 
-          <p>Since this is an assignment, the source code is <u>not</u> available online.</p>
+          <img class="tech-skill-icn" src="img/uoft-coa.png" style=" width: 288; height:127;">
         </td>
-      </tr> 
-      <tr>
-        <td><img src="img/markov-text.png" class="project-icon"></td>
-        <td><a href="https://github.com/mharmanani/markov-text-generator" 
-               style="text-decoration: none";>
-          <h5 class="card-header">Randomized Text Generator</h5></a>
-          <p>As indicated by the title, this simple project attempts to produce text by estimating the probability of a given word occurring after another in a text file fed to it as input.</p>
-          <p>While the text produced often makes no sense, I found the project fun to work with, and learned a great deal about Markov chains, which I used to implement the program.</p>
+        <td> 
+          <div class="card-header"> Computer Science Specialist </div>  
+          <div> (2016 - 2020) </div>
+          <ul>
+            <li> cGPA: 3.11/4.00 </li>
+            <li> Philosophy Minor </li>
+          </ul>
         </td>
-      </tr> 
+      </tr>
     </table>
   </div>
 </div>
