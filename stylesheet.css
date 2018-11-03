@@ -62,12 +62,18 @@ h3 {
 .card-header {
   letter-spacing: 3px;
   text-transform: uppercase;
-  font: 13px "Lato", sans-serif;
+  font: 13px;
   color: #00bcf6;
 }
 
 .card-description {
   font: 13px;
+}
+
+.framework-entry {
+  font-size: 13pt;
+  color: #fff;
+  font-family: "Helvetica Neue";
 }
 
 .timeframe-1 {
@@ -111,11 +117,11 @@ h3 {
 }
 
 .card-contain {
-  border-spacing: 0.1px;
+  border-spacing: 1px;
 }
 
 .project-table {
-   border-spacing: 32px;
+   border-spacing: 20px;
 }
 
 .project-icon {
