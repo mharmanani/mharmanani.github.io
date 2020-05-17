@@ -40,13 +40,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
           </li>
         </ul>
       </div>
@@ -75,7 +75,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Machine learning + Full stack development</p>
+      <p class="masthead-subheading font-weight-light mb-0"> Machine learning + Full stack development</p>
 
     </div>
   </header>
@@ -116,7 +116,7 @@
           <h5 class="text-secondary text-uppercase"> Interests</h5>
           <ul class="lead"> 
             <li> 
-              Mainly interested in Data Science &amp; Machine Learning, Web Development, and UX Design. 
+              Mainly interested in Data Science &amp; Machine Learning, Robotics, and Genomics/Bioinformatics. 
             </li>
             <li> Hobbies include photography, reading, writing, hiking, and programming.
             </li>
@@ -183,6 +183,10 @@
 
     <br/>
 
+    <img src='./assets/img/pytorch.svg'
+         style="height: 48px; margin: .45em"
+         class="skillIcon"
+    />
     <img src='./assets/img/postgresql.svg'
          style="height: 64px; margin: .45em"
          class="skillIcon"
@@ -196,14 +200,6 @@
          class="skillIcon"
     />
     <img src='./assets/img/docker.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/html-5.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/css3.svg'
          style="height: 64px; margin: .45em"
          class="skillIcon"
     />
@@ -230,7 +226,7 @@
       <br/>
 
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <h5 class="text-white"> 
             Venngage
           </h5>
@@ -241,34 +237,16 @@
                 font-size: 1em !important;
               "
             > 
-              <i> Toronto, ON, Canada, May 2019 - Present </i>
-            </p>
-            <p class="text-white">
-              Currently in a front end development role. Working with React frameworks like Redux, Hooks, styled components, and more.
-              Implemented various features such as control flows, UI components, and media libraries for photos, icons, and fonts.
-            </p>
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <h5 class="text-white"> 
-            OGERO Telecommunications
-          </h5>
-          <p class="lead text-white">
-            Summer Intern <br/>
-            <p class="text-white" 
-              style="
-                font-size: 1em !important;
-              "
-            > 
-              <i> Beirut, LB, Apr - May 2018 </i>
+              <i> Toronto, ON, Canada | May 2019 - May 2020 </i>
             </p>
             <ul class="text-white">
-              <li> Developed tools to analyze datasets pertaining to enterprise and employee daily performance
-              </li>
-              <li> Implemented algorithms to fetch, pull, and visualize data for the company's ticketing system
-              </li>
-
-            </p>
+              <li> Developed <b> content generation </b> algorithms for the <b> DesignAI </b> platform to autonomously generate infographics and presentations </li>
+              <li> Implemented <b> image aware heuristics in TypeScript </b> to improve the quality and complexity of generated designs </li>
+              <li> Implemented landing pages and UI components with React and CSS while working on an early prototype of DesignAI </li>
+              <li> Optimized the <b> performance and usability </b> of critical user flows such as icon searching using <b> React, JavaScript, and CSS </b> </li>
+              <li> Refactored vital areas of the presentation manager tool to improve the reliability and efficiency of thumbnail generation </li>
+              <li> Automated UI tests that were previously done manually with the help of <b> Python and Cypress </b> </li>
+            </ul>
           </p>
         </div>
       </div>
@@ -294,6 +272,47 @@
       <!-- Portfolio Grid Items -->
       <div class="row">
 
+          <div class="col-sm-6">
+              <h5> 
+                News Headline Generator
+              </h5>
+              <span style="display: inline-flex;">
+                <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
+                PyTorch | NumPy | torchtext
+              </span>
+              <br/>
+              <span style="display: inline-flex;">
+                  <a style="color: #1a9cbc;"> Repo </a> 
+                  &nbsp; | &nbsp; 
+                  <a style="color: #1a9cbc;"> Link </a> 
+              </span>
+              <p>
+                A recurrent autoencoder model implemented in PyTorch and trained on headlines collected from Reuters, using the teacher forcing method. 
+                By the end of the training, the model was able to produce headlines that <it> almost </it> make sense.
+              </p>
+            </div>
+
+          <div class="col-sm-6">
+              <h5> 
+                Convolutional Shoe Classifier
+              </h5>
+              <span style="display: inline-flex;">
+                <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
+                PyTorch | NumPy | torchvision
+              </span>
+              <br/>
+              <span style="display: inline-flex;">
+                  <a style="color: #1a9cbc;"> Repo </a> 
+                  &nbsp; | &nbsp; 
+                  <a style="color: #1a9cbc;"> Link </a> 
+              </span>
+              <p>
+                Implemented a Regularized SVM model to detect toxic tweets, with an accuracy of 95%. 
+                Used a word count vectorizer with n-gram range of (1,3) to turn tweets into vectors for training, and 
+                effectively preprocessed data by performing exploratory data analysis tasks such as cleaning and visualizing.
+              </p>
+            </div>
+
         <!-- tweets.py -->
         <div class="col-sm-6">
           <h5> 
@@ -301,8 +320,7 @@
           </h5>
           <span style="display: inline-flex;">
             <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fas fa-chart-pie"></i>
-            NLTK | scikit-learn | pandas
+            NLTK | scikit-learn | pandas | NumPy | matplotlib
           </span>
           <br/>
           <span style="display: inline-flex;">
@@ -320,7 +338,7 @@
         <!-- ftd.js -->
         <div class="col-sm-6">
           <h5> 
-            Fortnite 2D Online
+            Multiplayer Survival Game
           </h5>
           <span style="display: inline-flex;">
             <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-js"></i>
@@ -347,7 +365,7 @@
           <span style="display: inline-flex;">
             <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
             <i style="font-size: 24px; margin-right: 0.5em;" class="fas fa-database"></i>
-            NLTK | BeautifulSoup
+            SQL | NLTK | BeautifulSoup
           </span>
           <br/>
           <span style="display: inline-flex;">
@@ -358,28 +376,6 @@
             implement a content-based recommendation system that matches keyword input from the user with the data using the 
             Jaccard procedures for content-based filtering.
           </p>
-        </div>
-
-        <!-- game.js -->
-        <div class="col-sm-6">
-          <h5> 
-            Cosmic Jump
-          </h5>
-          <span style="display: inline-flex;">
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-js"></i>
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-html5"></i>
-            PhaserJS
-          </span>
-          <br/>
-          <span style="display: inline-flex;">
-              <a style="color: #1a9ccc;" href="https://www.github.com/mharmanani/game-js-phaser" > Repo </a>
-              &nbsp;|&nbsp; 
-              <a style="color: #1a9ccc;" href="https://mharmanani.github.io/game-js-phaser"> Link </a>
-          </span>
-            <p>
-              Developped a flappy bird clone written in JavaScript, HTML5 and Phaser. 
-              Added music, sound effects, and high resolution graphics for an immersive user experience. 
-            </p>
         </div>
 
         <!-- Paint.java -->
@@ -400,25 +396,6 @@
             The project was developed using the Scrum methodology in teams of four.
           </p>
         </div>
-
-        <!-- AIStrategy.java -->
-        <div class="col-sm-6">
-          <h5> 
-            Unbeatable Tic Tac Toe
-          </h5>
-          <span style="display: inline-flex;">
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-java"></i>
-            AWT | Swing
-          </span>
-          <br/>
-          <span style="display: inline-flex;">
-              <a style="color: #1a9cbc;" href="https://www.github.com/mharmanani/unbeatable-tictactoe"> Repo </a> 
-          </span>
-          <p>
-            An unbeatable AI agent for the game Tic Tac Toe. It uses the Minimax strategy to search the game state and maximize its reward. 
-          </p>
-        </div>
-
          <br/>
       </div>
       <!-- /.row -->
@@ -457,7 +434,7 @@
         <p class="text-uppercase"> Honours Bachelor of Science </p>
         <ul>
           <li> Computer Science Specialist + Minor in Philosophy </li>
-          <li> cGPA: 3.18/4.00 </li>
+          <li> cGPA: 3.21/4.00 </li>
         </ul>
       </div>
 
@@ -498,7 +475,7 @@
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
     <div class="container">
-      <small> &copy; Mohamed Harmanani 2019</small>
+      <small> &copy; Mohamed Harmanani 2020</small>
     </div>
   </section>
 
