@@ -19,6 +19,10 @@
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+  <link rel="stylesheet" href="css/ext-styles.css">
+
+
 
 </head>
 
@@ -104,8 +108,7 @@
             </li>
             <li> 
               Originally from Beirut, Lebanon
-              <img style="width: 24px; height: 24px;"
-              src="./assets/img/lebanon.svg">
+              <img class="sq-icon-xs" src="./assets/img/lebanon.svg">
             </li>
           </ul>
         </div>
@@ -119,14 +122,6 @@
             </li>
           </ul>
         </div>
-      </div>
-
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-primary btn-xl text-white">
-          <i class="fas fa-file mr-2"></i>
-          My resume
-        </a>
       </div>
     </div>
   </section>
@@ -149,60 +144,25 @@
       <br/>
 
       <center>
-      <img src='./assets/img/python-3.svg'
-        style="height: 64px; margin: .45em"
-        class="skillIcon"
-    /> 
-    <img src='./assets/img/javascript.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/react.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />  
-    <img src='./assets/img/nodejs.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/php-1.svg'
-         style="height: 32px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/java.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    /> 
-    <img src='./assets/img/jquery-1.svg'
-         style="height: 32px; margin: .45em"
-         class="skillIcon"
-    />
+      <img src='./assets/img/python-3.svg' class="skill-icon"/> 
+      <img src='./assets/img/typescript.svg' class="skill-icon"/> 
+      <img src='./assets/img/javascript.svg' class="skill-icon"/> 
+      <img src='./assets/img/react.svg' class="skill-icon"/> 
+      <img src='./assets/img/nodejs.svg' class="skill-icon"/> 
+      <img src='./assets/img/php-1.svg' class="skill-icon-sml"/> 
+      <img src='./assets/img/java.svg' class="skill-icon"/> 
 
-    <br/>
+      <br/>
 
-    <img src='./assets/img/pytorch.svg'
-         style="height: 48px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/postgresql.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    /> 
-    <img src='./assets/img/sk-logo.png'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/git-icon.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />
-    <img src='./assets/img/docker.svg'
-         style="height: 64px; margin: .45em"
-         class="skillIcon"
-    />
+      <img src='./assets/img/pytorch.svg' class="skill-icon-sml"/> 
+      <img src='./assets/img/postgresql.svg' class="skill-icon"/> 
+      <img src='./assets/img/sk-logo.png' class="skill-icon"/> 
+      <img src='./assets/img/git-icon.svg' class="skill-icon"/> 
+      <img src='./assets/img/docker.svg' class="skill-icon"/> 
 
-    <br/> <br/> <br/>
-    <p> Flask · Redux · NLTK · pandas · C · Unix + Linux · REST API </p> 
+      <br/> <br/> <br/>
+      <p> Flask · Redux · NLTK · pandas · C · Unix + Linux · REST API 
+      </p> 
     </center>  
   </section>
 
@@ -225,28 +185,41 @@
       <div class="row">
         <div class="col-sm-12">
           <h5 class="text-white"> 
-            Venngage
+            Venngage Inc.
           </h5>
-          <p class="lead text-white">
-            Software Engineer Intern <br/> 
-            <p class="text-white" 
-              style="
-                font-size: 1em !important;
-              "
-            > 
-              <i> Toronto, ON, Canada | May 2019 - May 2020 </i>
-            </p>
-            <ul class="text-white">
-              <li> Developed <b> content generation </b> to autonomously generate infographics and presentations </li>
-              <li> Implemented <b> image aware heuristics in TypeScript </b> to improve the quality and complexity of generated designs </li>
-              <li> Implemented landing pages and UI components with React and CSS while working on an early prototype of DesignAI </li>
-              <li> Optimized the <b> performance and usability </b> of critical user flows such as icon searching using <b> React, JavaScript, and CSS </b> </li>
-              <li> Refactored vital areas of the presentation manager tool to improve the reliability and efficiency of thumbnail generation </li>
-              <li> Automated UI tests that were previously done manually with the help of <b> Python and Cypress </b> </li>
-            </ul>
+          <p class="lead text-white" style="margin-bottom: 0;">
+            Software Engineer Intern
           </p>
+          <p class="text-white" style="font-size: 1em !important;"> 
+            <i> Toronto, ON, Canada | May 2019 - May 2020 </i>
+            <br/>
+          </p>
+          <div class="text-white" style="width: 48rem; font-size: 1em !important;">
+            <span style="display: inline-flex;">
+              <i class="devicon-typescript-plain" style="font-size: 24px; margin-right: 0.5em;"></i>
+              <i class="devicon-javascript-plain" style="font-size: 24px; margin-right: 0.5em;"></i>
+              <i class="devicon-react-original" style="font-size: 24px; margin-right: 0.5em;"></i>
+              <i class="devicon-html5-plain" style="font-size: 24px; margin-right: 0.5em;"></i>
+              <i class="devicon-css3-plain" style="font-size: 24px; margin-right: 0.5em;"></i>
+              <i class="devicon-php-plain" style="font-size: 24px; margin-right: 0.5em;"></i>
+            </span>
+            <br>
+            <ul>
+              <li> Built an interface for users to generate designs with a heuristic AI solution, using TypeScript, React, Redux, and CSS animations </li>
+              <li> Developed image aware algorithms for autonomous layout generation </li>
+              <li> Improved speed and reliability of various features such as icon searching, and presentation thumbnail management </li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="assets/files/resume.pdf">
+          <i class="fas fa-file mr-2"></i>
+          My resume
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -273,12 +246,12 @@
               <h5> 
                 News Headline Generator
               </h5>
-              <span style="display: inline-flex;">
-                <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
+              <span class="horizontal-list">
+                <i style="font-size: 24px; margin-right: 0.5em;" class="devicon-python-plain"></i>
                 PyTorch | NumPy | torchtext
               </span>
               <br/>
-              <span style="display: inline-flex;">
+              <span class="horizontal-list">
                   <a style="color: #1a9cbc;"> Repo </a> 
                   &nbsp; | &nbsp; 
                   <a style="color: #1a9cbc;"> Link </a> 
@@ -293,12 +266,12 @@
               <h5> 
                 Convolutional Shoe Classifier
               </h5>
-              <span style="display: inline-flex;">
-                <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
+              <span class="horizontal-list">
+                <i class="devicon-python-plain"></i>
                 PyTorch | NumPy | torchvision
               </span>
               <br/>
-              <span style="display: inline-flex;">
+              <span class="horizontal-list">
                   <a style="color: #1a9cbc;"> Repo </a> 
                   &nbsp; | &nbsp; 
                   <a style="color: #1a9cbc;"> Link </a> 
@@ -315,7 +288,7 @@
             Classifying Toxic Tweets
           </h5>
           <span style="display: inline-flex;">
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
+            <i class="devicon-python-plain"></i>
             NLTK | scikit-learn | pandas | NumPy | matplotlib
           </span>
           <br/>
@@ -337,11 +310,13 @@
             Multiplayer Survival Game
           </h5>
           <span style="display: inline-flex;">
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-js"></i>
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-node-js"></i>
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fas fa-database"></i>
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-html5"></i>
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-css3"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-react-original"></i>
+            <i class="devicon-nodejs-plain"></i>
+            <i class="devicon-express-original"></i>
+            <i class="fas fa-database"></i>
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
           </span>
           <br/>
           <span style="display: inline-flex;">
@@ -358,13 +333,13 @@
           <h5> 
             Episode Recommendation System
           </h5>
-          <span style="display: inline-flex;">
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-python"></i>
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fas fa-database"></i>
+          <span class="horizontal-list">
+            <i class="devicon-python-plain"></i>
+            <i class="fas fa-database"></i>
             SQL | NLTK | BeautifulSoup
           </span>
           <br/>
-          <span style="display: inline-flex;">
+          <span class="horizontal-list">
               <a style="color: #1a9cbc;" href="https://www.github.com/mharmanani/ep-recommend"> Repo </a> 
           </span>
           <p>
@@ -377,19 +352,21 @@
         <!-- Paint.java -->
         <div class="col-sm-6">
           <h5> 
-            MS Paint Clone
+            Cosmic Jump
           </h5>
           <span style="display: inline-flex;">
-            <i style="font-size: 24px; margin-right: 0.5em;" class="fab fa-java"></i>
-            AWT | Swing | Graphics2D | Scrum | JUnit
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-html5-plain"></i>
+            <i class="fas fa-gamepad"></i>
           </span>
           <br/>
-          <span style="display: inline-flex;">
-              <a style="color: #1a9cbc;" href="https://www.github.com/mharmanani/paintClone"> Repo </a> 
+          <span class="horizontal-list">
+              <a style="color: #1a9cbc;" href="https://www.github.com/mharmanani/game-js-phaser"> Repo </a>  
+              &nbsp; | &nbsp; 
+              <a style="color: #1a9cbc;" href="https://mharmanani.github.io/game-js-phaser"> Link </a> 
           </span>
           <p>
-            A Microsoft Paint Clone written in Java Swing, AWT, and Graphics2D as part of a course project. It uses the Command, Component, and Observer design patterns, with an MVC architecture.
-            The project was developed using the Scrum methodology in teams of four.
+            A fun litte browser game similiar to Flappy Bird. Built with JavaScript, HTML and the Phaser.js framework. Features immersive music and high quality graphical elements gathered from third parties. 
           </p>
         </div>
          <br/>
@@ -427,6 +404,9 @@
           </a>
           <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.ca/in/mharmanani">
             <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.medium.com/@mharmanani">
+            <i class="fab fa-fw fa-medium-m"></i>
           </a>
         </div>
 

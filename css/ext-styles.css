@@ -1,0 +1,50 @@
+.sq-icon-xs {
+	height: 24px;
+	width: 24px;
+}
+
+.skill-icon {
+	margin: .45em;
+	height: 64px;
+}
+
+.skill-icon-sml {
+	margin: .45em;
+	height: 32px;
+}
+
+.skill-icon-xl {
+	margin: .45em;
+	height: 128px;
+}
+
+.skill-icon-xs {
+	height: 24px;
+	margin-right: 0.5em;
+}
+
+.horizontal-list {
+	display: inline-flex;
+}
+
+.link {
+	color: #1a9cbc;
+}
+
+.subtext {
+	font-size: 1em !important;
+}
+
+.describe {
+	font-size: 1em !important;
+	width: 48rem;
+}
+
+/** Need to clean up... **/
+.fas, .devicon-python-plain,  
+.devicon-javascript-plain, .devicon-nodejs-plain,  
+.devicon-react-original, .devicon-express-original, 
+.devicon-html5-plain, .devicon-css3-plain {
+	margin-right: 0.5em;
+	font-size: 24px;
+}
