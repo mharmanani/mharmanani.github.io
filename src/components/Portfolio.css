@@ -1,0 +1,64 @@
+.project-container {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    margin: 1vw 1vh;
+    flex-wrap: wrap;
+}
+
+.project-logo {
+    margin-right: 1vw;
+}
+
+.project-name {
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.project-type {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Inconsolata;
+    font-size: 1rem;
+}
+
+.project-desc {
+    font-size: 1em;
+    color: #6a6a6a;
+    max-width: 50vw;
+}
+
+button {
+    margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 760px) {
+
+    .project-container {
+        margin-bottom: 2em;
+    }
+
+    .project-name {
+        font-size: 1rem;
+    }
+
+    .project-role {
+        font-size: 0.7em;
+    }
+
+    .project-desc {
+        display: none;
+    }
+
+    .project-link {
+        font-size: 0.7em;
+    }
+}

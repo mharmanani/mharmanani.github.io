@@ -1,0 +1,73 @@
+.workplace-link {
+    color: #000;
+}
+
+.workplace-link:hover {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+.workplace-container {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.workplace-container:hover {
+    transform: scale(1.05);
+}
+
+.workplace-content {
+    display: flex;
+    align-items: center;
+    margin: 1vw 1vh;
+    flex-wrap: wrap;
+}
+
+.workplace-logo {
+    margin-right: 1vw;
+}
+
+.workplace-name {
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.workplace-role {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Inconsolata;
+    font-size: 1rem;
+}
+
+.workplace-desc {
+    font-size: 1em;
+    color: #6a6a6a;
+    max-width: 50vw;
+}
+
+button {
+    margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 760px) {
+
+    .workplace-container {
+        margin-bottom: 2em;
+    }
+
+    .workplace-name {
+        font-size: 1rem;
+    }
+
+    .workplace-role {
+        font-size: 0.7em;
+    }
+
+    .workplace-desc {
+        display: none;
+    }
+}

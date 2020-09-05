@@ -1,0 +1,46 @@
+.home-content {
+    margin: 15vw;
+    overflow-x: hidden;
+}
+
+.section {
+    margin-top: 15vh;
+    margin-left: 15vw;
+}
+
+.image-col {
+    margin-top: 15vh;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid #fafafa;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.section-title {
+    margin-bottom: 1.5vh;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: Alata;
+}
+
+p {
+    font-family: 'Roboto Slab';
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+@media screen and (max-width: 760px) {
+
+    .section {
+        width: 75vw;
+    }
+
+    .profile-pic {
+        display: none;
+    }
+}
