@@ -33,7 +33,7 @@ class App extends React.Component {
 	render () {
 		return (
 			<div className='App-container'>
-				<Router> 
+				<Router basename={process.env.PUBLIC_URL}>
 					<Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subtitle} text={this.state.home.text} />} />					
 					<Route path="/uoft-genet" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subtitle} text={this.state.home.text} />} />
 					<Route path="/venngage" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subtitle} text={this.state.home.text} />} />
