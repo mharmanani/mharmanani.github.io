@@ -40,7 +40,31 @@ p {
         width: 75vw;
     }
 
+    .image-col {
+        margin-top: 5vw;
+    }
+
     .profile-pic {
+        width: 125px;
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
         display: none;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+    .home-title {
+        margin-left: 10vw;
+    }
+    
+    .home-content {
+        margin-left: 10vw;
+    }
+    
+    .section {
+        margin-top: 10vh;
+        margin-left: 10vw;
+    }
+    
 }

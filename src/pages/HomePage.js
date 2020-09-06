@@ -31,7 +31,7 @@ const HomePage = (props) => {
                             <img src={resume_icon}
                                 width={32}
                             />
-                            <a href='https://mharmanani.github.io/assets/files/resume.pdf'>See my resumé</a> 
+                            <a href='https://mharmanani.github.io/files/resume.pdf'>See my resumé</a> 
                         </span>
                     </div>
                 </Col>
