@@ -77,13 +77,13 @@ const Portfolio = () => {
                                     <h3 className='project-name'> {project.name} </h3>
                                     <p className='project-type'> {project.type} </p>
                                     <div className='project-desc'> {project.desc} </div>
-                                    <div> 
-                                    <a href={project.github} className='project-link'> GitHub </a>
-                                    {(project.link) 
-                                        ? <span> | <a href={project.link} className='project-link'> Link </a>  </span>
-                                        : ''
-                                    }
-                                </div>
+                                    <div className='project-links'> 
+                                        <a href={project.github} className='project-link'> GitHub </a>
+                                        {(project.link) 
+                                            ? <span> | <a href={project.link} className='project-link'> Link </a>  </span>
+                                            : ''
+                                        }
+                                    </div>
                                 </div>
                                 <br/>
                             </span>

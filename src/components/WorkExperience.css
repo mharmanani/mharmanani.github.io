@@ -21,6 +21,7 @@
     align-items: center;
     margin: 1vw 1vh;
     flex-wrap: wrap;
+    width: 80vw;
 }
 
 .workplace-logo {
@@ -70,4 +71,20 @@ button {
     .workplace-desc {
         display: none;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+    .workplace-name {
+        font-size: 1rem;
+    }
+
+    .workplace-role {
+        font-size: 0.8em;
+    }
+
+    .workplace-desc {
+        display: none;
+    }
+
 }
