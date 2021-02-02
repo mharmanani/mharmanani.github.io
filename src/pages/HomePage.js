@@ -14,7 +14,7 @@ const resume_icon = require('../assets/img/resume_icon.svg');
 
 const paragraphs = [
     "Hey there, I'm Mohamed. I'm a young software engineer living in Toronto, currently wrapping up my studies in Computer Science and Philosophy at UofT.",
-    "My current interests revole around the areas of Data Science & Machine Learning, Robotics, and Genomics/Bioinformatics.",
+    "My current interests revolve around the areas of Data Science & Machine Learning, Robotics, and Bioinformatics.",
     "My hobbies include reading, gaming, photography, writing, and programming."
 ]
 
@@ -41,7 +41,7 @@ const HomePage = (props) => {
             </Row>
 
             <div id='skills' className='section'>
-                <div className='section-title'> My technical skills </div>
+                <div className='section-title'> Technical skills </div>
                 <Skills />
             </div>
 

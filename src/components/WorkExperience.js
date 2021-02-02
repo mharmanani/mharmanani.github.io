@@ -6,10 +6,10 @@ const WorkExperience = () => {
     const workplaces = [
         { 
             name: 'University of Toronto', 
-            role: 'Bioinformatics Research Analyst',
+            role: 'Bioinformatics Research Intern',
             link: 'uoft-genet',
             logo: require('../assets/img/Utoronto_coa.svg.png'), 
-            desc: 'Analyzing genomic data to determine epigenetic factors in plant stress response and sex determination.', 
+            desc: 'Building tools and pipelines for transpriptomic analysis in Python and Bash, from transcriptome assembly to sequence alignment and transciprt annotation.', 
             colour: '#002a5c'
         },
         { 
@@ -27,27 +27,25 @@ const WorkExperience = () => {
         <div className='workplaces'>
             {workplaces.map((workplace) => {
                 return (
-                    <a className='workplace-link' href={'/' + workplace.link}>
-                        <div className='workplace-container'>
-                            <div style={{ borderLeft: `3px solid ${workplace.colour}`, paddingLeft: '1rem'}}>
-                                <span className='workplace-content'>
-                                    <div>
-                                        <img 
-                                            className='workplace-logo' 
-                                            alt={workplace.name + ' logo'} 
-                                            src={workplace.logo} 
-                                            width={64} 
-                                        />
-                                    </div>
-                                    <div>
-                                        <h3 className='workplace-name'> {workplace.name} </h3>
-                                        <p className='workplace-role'> {workplace.role} </p>
-                                        <div className='workplace-desc'> {workplace.desc} </div>
-                                    </div>
-                                </span>
-                            </div>
+                    <div className='workplace-container'>
+                        <div>
+                            <span className='workplace-content'>
+                                <div>
+                                    <img 
+                                        className='workplace-logo' 
+                                        alt={workplace.name + ' logo'} 
+                                        src={workplace.logo} 
+                                        width={64} 
+                                    />
+                                </div>
+                                <div>
+                                    <h3 className='workplace-name'> {workplace.name} </h3>
+                                    <p className='workplace-role'> {workplace.role} </p>
+                                    <div className='workplace-desc'> {workplace.desc} </div>
+                                </div>
+                            </span>
                         </div>
-                    </a>
+                    </div>
                 );
             })}
            </div>

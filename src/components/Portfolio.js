@@ -4,8 +4,15 @@ import './Portfolio.css';
 
 const projects = [
     { 
+        name: 'GroupMe.ca', 
+        github: 'https://github.com/groupme-ca',
+        link: 'http://www.groupme.ca',
+        logo: require('../assets/img/groupme_g_logo.png'), 
+        desc: 'A social media application to match students with their peers based on common interests and courses taken',
+        colour: '#ff914e'
+    },
+    { 
         name: 'Shoe Pair Classifier', 
-        type: 'Convolutional Neural Networks',
         github: 'https://github.com/mharmanani/conv-shoe-classifier',
         link: 'https://nbviewer.jupyter.org/github/mharmanani/conv-shoe-classifier/blob/master/notebook/conv-shoe-classifier.ipynb',
         logo: require('../assets/img/shoe.svg'), 
@@ -16,7 +23,6 @@ const projects = [
     },
     { 
         name: 'Job Market Analysis', 
-        type: 'Exploratory Data Analysis',
         github: 'https://github.com/mharmanani/job-market-analysis',
         link: 'https://medium.com/@mharmanani/an-exploratory-analysis-of-the-data-science-job-market-in-2020-e909349dfc00',
         logo: require('../assets/img/job_seeker.svg'), 
@@ -27,7 +33,6 @@ const projects = [
     },
     { 
         name: 'Toxic Tweets Detector', 
-        type: 'Sentiment Analysis',
         link: 'https://nbviewer.jupyter.org/github/mharmanani/toxic-tweets-clf/blob/master/notebook/twitter_sent_analysis.ipynb',
         github: 'https://github.com/mharmanani/toxic-tweets-clf',
         logo: require('../assets/img/twitter-tox.svg'), 
@@ -36,7 +41,6 @@ const projects = [
     },
     { 
         name: 'Episode Recommender System', 
-        type: 'Recommender System',
         github: 'https://github.com/mharmanani/ep-recommend',
         logo: require('../assets/img/tv.svg'), 
         icon_author: 'Creaticca Ltd',
@@ -46,7 +50,6 @@ const projects = [
     },
     { 
         name: '2D Pixel Survivor', 
-        type: 'Online Multiplayer Game',
         github: 'https://github.com/mharmanani/2d-survival',
         logo: require('../assets/img/zombie.svg'), 
         icon_author: 'Laura Reen',
@@ -56,7 +59,6 @@ const projects = [
     },
     { 
         name: 'Cosmic Jump', 
-        type: 'Online Game',
         link: 'https://mharmanani.github.io/cosmic-jump',
         github: 'https://github.com/mharmanani/cosmic-jump',
         logo: require('../assets/img/meteor.svg'), 
@@ -73,39 +75,36 @@ const Portfolio = () => {
             {projects.map((project) => {
                 return (
                     <div className='project-container'>
-                        <div style={{ borderLeft: `3px solid ${project.colour}`, paddingLeft: '1rem'}}>
-                            <span className='project-content'>
-                                <div>
-                                    <img 
-                                        className='project-logo' 
-                                        alt={project.name + ' logo'} 
-                                        src={project.logo} 
-                                        width={64} 
-                                    />
+                        <span className='project-content'>
+                            <div>
+                                <img 
+                                    className='project-logo' 
+                                    alt={project.name + ' logo'} 
+                                    src={project.logo} 
+                                    width={64} 
+                                />
+                            </div>
+                            <div>
+                                <h3 className='project-name'> {project.name} </h3>
+                                <div className='project-desc'> {project.desc} </div>
+                                <div className='project-links'> 
+                                    <a href={project.github} className='project-link'> GitHub </a>
+                                    {(project.link) 
+                                        ? <span> | <a href={project.link} className='project-link'> Link </a>  </span>
+                                        : ''
+                                    } 
+                                    {(project.icon_link && project.icon_author) 
+                                        ? <span> | 
+                                            <span> Icon by 
+                                                <a href={project.icon_link}> {project.icon_author}  </a> 
+                                                </span>
+                                        </span>
+                                        : ''
+                                    } 
                                 </div>
-                                <div>
-                                    <h3 className='project-name'> {project.name} </h3>
-                                    <p className='project-type'> {project.type} </p>
-                                    <div className='project-desc'> {project.desc} </div>
-                                    <div className='project-links'> 
-                                        <a href={project.github} className='project-link'> GitHub </a>
-                                        {(project.link) 
-                                            ? <span> | <a href={project.link} className='project-link'> Link </a>  </span>
-                                            : ''
-                                        } 
-                                        {(project.icon_link && project.icon_author) 
-                                            ? <span> | 
-                                                <span> Icon by 
-                                                    <a href={project.icon_link}> {project.icon_author}  </a> 
-                                                 </span>
-                                            </span>
-                                            : ''
-                                        } 
-                                    </div>
-                                </div>
-                                <br/>
-                            </span>
-                        </div>
+                            </div>
+                            <br/>
+                        </span>
                     </div>
                 );
             })}

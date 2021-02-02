@@ -1,12 +1,10 @@
 .project-container {
-    margin: 0 1rem;
-    cursor: pointer;
+    margin: 3vh 0;
 }
 
 .project-content {
     display: flex;
     align-items: center;
-    margin: 1vw 1vh;
     flex-wrap: wrap;
     width: 80vw;
 }
