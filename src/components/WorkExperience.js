@@ -9,7 +9,7 @@ const WorkExperience = () => {
             role: 'Bioinformatics Research Intern',
             link: 'uoft-genet',
             logo: require('../assets/img/Utoronto_coa.svg.png'), 
-            desc: 'Building tools and pipelines for transpriptomic analysis in Python and Bash, from transcriptome assembly to sequence alignment and transciprt annotation.', 
+            desc: 'Building tools and pipelines for analyzing biological sequence data in Python and Bash, from transcriptome assembly to sequence alignment and transcript annotation.', 
             colour: '#002a5c'
         },
         { 
