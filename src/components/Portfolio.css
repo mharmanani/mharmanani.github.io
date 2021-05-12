@@ -1,12 +1,10 @@
 .project-container {
-    margin: 0 1rem;
-    cursor: pointer;
+    margin: 3vh 0;
 }
 
 .project-content {
     display: flex;
     align-items: center;
-    margin: 1vw 1vh;
     flex-wrap: wrap;
     width: 80vw;
 }
@@ -19,7 +17,7 @@
     font-size: 1.3rem;
     font-family: 'Roboto Slab';
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 0.3rem;
     margin-top: 1rem;
     text-decoration: none;
 }
@@ -35,6 +33,15 @@
     font-size: 1em;
     color: #6a6a6a;
     max-width: 50vw;
+    text-align: justify;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin: .3rem 0;
 }
 
 button {
@@ -42,48 +49,11 @@ button {
 }
 
 @media screen and (max-width: 760px) {
-
-    .project-container {
-        margin-bottom: 2em;
-    }
-
-    .project-name {
-        font-size: 1rem;
-    }
-
-    .project-type {
-        font-size: 0.7em;
-    }
-
     .project-desc {
-        display: none;
-    }
-
-    .project-links, .project-link {
-        font-size: 0.7em;
+        max-width: 75vw;
     }
 }
 
 @media screen and (max-width: 760px) {
 
-    .project-container {
-        margin-bottom: 2em;
-    }
-
-    .project-name {
-        font-size: 0.8rem;
-    }
-
-    .project-type {
-        font-size: 0.8em;
-    }
-
-    .project-links, .project-link {
-        font-size: 0.5em;
-    }
-
-    .project-logo {
-        width: 48px;
-        height: auto;
-    }
 }

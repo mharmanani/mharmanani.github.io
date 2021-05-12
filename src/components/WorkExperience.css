@@ -1,25 +1,6 @@
-.workplace-link {
-    color: #000;
-}
-
-.workplace-link:hover {
-    color: #4A90E2;
-    text-decoration: none;
-}
-
-.workplace-container {
-    margin: 0 1rem;
-    cursor: pointer;
-}
-
-.workplace-container:hover {
-    transform: scale(1.05);
-}
-
 .workplace-content {
     display: flex;
     align-items: center;
-    margin: 1vw 1vh;
     flex-wrap: wrap;
     width: 80vw;
 }
@@ -39,8 +20,7 @@
 
 .workplace-role {
     margin-top: 0;
-    margin-bottom: 0;
-    font-family: Inconsolata;
+    margin-bottom: .2rem;
     font-size: 1rem;
 }
 
@@ -50,40 +30,34 @@
     max-width: 50vw;
 }
 
+.workplace-dates {
+    font-size: 0.75em;
+    color: #9a9a9a;
+    margin-top: .3em;
+}
+
 button {
     margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 760px) {
 
+    .workplace-logo {
+        display: none;
+    }
+
     .workplace-container {
         margin-bottom: 2em;
     }
 
-    .workplace-name {
-        font-size: 1rem;
-    }
-
-    .workplace-role {
-        font-size: 0.7em;
-    }
-
     .workplace-desc {
-        display: none;
+        max-width: 90vw;
     }
 }
 
-@media screen and (max-width: 400px) {
-
-    .workplace-name {
-        font-size: 1rem;
-    }
-
-    .workplace-role {
-        font-size: 0.8em;
-    }
-
-    .workplace-desc {
+@media screen and (max-width: 440px) {
+    
+    .workplace-logo {
         display: none;
     }
 
