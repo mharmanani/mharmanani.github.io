@@ -12,8 +12,8 @@ function Hero(props) {
             </div>
 
             <div className='subtitle'>
-                <span role='img' aria-label='chart'>📊</span> Data Scientist | 
-                <span role='img' aria-label='laptop'> 💻 </span>  Software Engineer 
+                <span role='img' id='ds-subtitle' aria-label='chart'>📊 Data Scientist </span> 
+                <span role='img' id='se-subtitle' aria-label='laptop'> | 💻 Software Engineer </span>  
             </div>
         </div>
     );

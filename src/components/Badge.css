@@ -1,0 +1,28 @@
+.badge-outer {
+    width: 68px;
+    height: 28px;
+    border-radius: .2rem;
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.badge-outer:hover {
+    cursor: pointer;
+}
+
+.badge-txt:hover {
+    text-decoration: underline;
+}
+
+.badge-txt {
+    color: #4A90E2;
+    font-weight: 700;
+}
+
+.badge-icon {
+    margin-left: 0;
+    margin-right: 0.2rem;
+    width: fit-content;
+}
