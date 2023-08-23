@@ -11,6 +11,7 @@
   <link href="vendor/css/academicons.min.css" rel="stylesheet">
   <link href="vendor/pygments/default.css" rel="stylesheet">
   <link href="css/bamos.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <link href="css/sharingbuttons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" type="text/css">
   <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="vendor/js/jquery.min.js"></script>
@@ -36,11 +37,11 @@
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-10 col-md-offset-1" style="width: 100%; margin-left: 0 !important;">
 					<div class="navbar-header">
 						  <a href="/" class="navbar-brand">
                   <div>
-                      <img src="images/me-face.jpeg" class="img-circle">
+                      <!--<img src="images/me-face.jpeg" class="img-circle"> !-->
                       Mohamed Harmanani
                   </div>
               </a>
@@ -86,10 +87,10 @@
         Mohamed Harmanani <span style="font-size: 0.5em; color: #888; text-align: right;"> <b>(They/He)</b> </span>
       </div>
       <div style="font-size: 1.2em;">
-        Data & Applied Scientist
+        Graduate Researcher, Machine Learning 
       </div>
       <div style="font-size: 1.2em; padding-top: 0.3em;">
-        MSc Candidate @ <a href="https://www.queensu.ca">Queen's University</a>
+        <a href="https://medi.cs.queensu.ca"> Med-i Lab</a> @ Queen's University
       </div>
       <br>
 
@@ -109,8 +110,12 @@
             <i class="fa-brands fa-github"></i></a>
         </li>
         <li>
-          <a href="mailto:harmanani.mohamed@gmail.com" target="_blank">
+          <a href="mailto:mohamed.harmanani@queensu.ca" target="_blank">
             <i class="fa fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/harmananim" target="_blank">
+          <i class="fa-brands fa-twitter"></i></a>
         </li>
         <li>
           <a href="https://scholar.google.com/citations?hl=en&user=dNDG5CgAAAAJ" target="_blank">
@@ -133,12 +138,10 @@
     <div class="col-md-12">
 <hr>
 
-<p align="justify">
-  I'm a MSc student at Queen's in the <a href="https://medi.cs.queensu.ca">Medical Informatics (Med-i)</a> research group, advised by Dr. Parvin Mousavi. 
-  My research mainly focuses on exploring the use of deep learning in medicine and healthcare.
-
-  I have over 3 years of professional and research experience in various fields such as Data Science, Machine Learning, Bioinformatics, and Software Development. 
-  I did my undergraduate at the University of Toronto, where I got my BSc in Computer Science and Philosophy.
+<p align="justify"> 
+  I am a MSc candidate at Queen's University as well as a Research Assistant in the <a href="https://medi.cs.queensu.ca">Medical Informatics (Med-i)</a> laboratory, advised by Dr. Parvin Mousavi. 
+  My main research interests are in computer vision, deep learning, and medical imaging. More specifically, my research focuses on using deep learning to detect prostate cancer in real-time during ultrasound-guided biopsy procedures. 
+  I am a recipient of the Robert Sutherland Fellowship at Queen's and the <a href="https://medicreate.cs.queensu.ca/">NSERC MediCREATE</a> training award. 
 </p>
 <p><br></p>
 
@@ -159,21 +162,28 @@
   </tr>
   <tr>
     <td>
-      <strong>BSc. in Computer Science</strong> & Philosophy, <em>University of Toronto</em>
+      <strong>HBSc. in Computer Science</strong> & Philosophy, <em>University of Toronto</em>
       <br>
     </td>
     <td class="col-md-2" style="text-align:right;">2016&nbsp;-&nbsp;2021</td>
   </tr>
 </tbody></table>
 
-<h2 id="-previous-positions"><i class="fa fa-desktop"></i> Previous Positions</h2>
+<h2 id="-previous-positions"><i class="fa fa-desktop"></i> Experience </h2>
 <table class="table table-hover">
 <tbody>
 
 <tr>
   <td style="padding-right:0;">
+<p style="margin: 0"><strong>Machine Learning Student Researcher</strong>, <em>Vector Institute</em></p>
+  </td>
+  <td class="col-md-2" style="text-align:right; padding-left:0;">2023&nbsp;-&nbsp;Present</td>
+</tr>
+
+<tr>
+  <td style="padding-right:0;">
 <p style="margin: 0"><strong>Graduate Research Assistant</strong>, <em>Queen's University</em><span style="color:grey;font-size:1.3rem;margin: 0">
-(with <a href="https://medi.cs.queensu.ca" target="_blank">Parvin Mousavi</a> on AI/ML for healthcare)
+(with <a href="https://vectorinstitute.ai/team/parvin-mousavi/" target="_blank">Parvin Mousavi</a> on AI/ML for healthcare)
 </span></p>
   </td>
   <td class="col-md-2" style="text-align:right; padding-left:0;">2022&nbsp;-&nbsp;Present</td>
@@ -218,7 +228,7 @@
 </tr>
 </tbody></table>
 
-<h2 id="-publications"><i class="fa fa-scroll"></i> Publications</h2>
+<h2 id="-publications"><i class="fa fa-scroll"></i> Publications & Preprints</h2>
 
 <!-- [<a href="https://github.com/bamos/cv/blob/master/publications/all.bib">BibTeX</a>] -->
 <!--<p>Representative publications that I am a primary author on are -->
@@ -231,46 +241,84 @@
 
 <tbody>
 
+  <tr>
+    <td class="col-md-3"><a><img src="images/publications/seird-3.png" width="269"></a> </td>
+    <td>
+      <strong>Modelling the Spread of COVID-19 in Indoor Spaces using Probabilistic Automated Planning</strong><br>
+      <strong>M. Harmanani</strong> <br>
+      ICAPS 2023 Scheduling and Planning Applications woRKshop (SPARK 2023)<br>
+      [<a href="javascript: none" onclick="$(&quot;#abstract_spark23&quot;).toggle()">abs</a>]
+      [<a href="https://arxiv.org/abs/2308.08190" target="_blank">paper</a>]
+      <br>
+      <div id="abstract_spark23" style="text-align: justify; display: none">
+        <p>The coronavirus disease 2019 (COVID-19) pandemic has been ongoing for around 3 years, and has infected over 750 million people and caused over 6 million deaths worldwide at the time of writing. 
+          Throughout the pandemic, several strategies for controlling the spread of the disease have been debated by healthcare professionals, government authorities, and international bodies. 
+          To anticipate the potential impact of the disease, and to simulate the effectiveness of different mitigation strategies, a robust model of disease 
+          spread is needed. In this work, we explore a novel approach based on probabilistic planning and dynamic graph analysis to model the spread of 
+          COVID-19 in indoor spaces. We also endow the planner with means to control the spread of the disease trough non-pharmaceutical interventions (NPIs) 
+          such as mandating masks, vaccines, capacity limits, and social distancing. We demonstrate that the use of automated probabilistic planning is 
+          effective in predicting the amount of infections that are likely to occur in shared spaces, and that they are capable of designing competent 
+          interventions to limit the spread of the disease.
+        </p>
+      </div>	
+    </td>
+  </tr>
 
-<tr id="tr-fujimori2022sigcse">
-<td align="right" style="padding-left:0;padding-right:0;">
-1.
-</td>
-<td>
-<a href="https://doi.org/10.1145/3478432.3499048" target="_blank"><img src="images/publications/fujimor-sigcse2022 copy.png" onerror="this.style.display='none'" class="publicationImg"></a> 
-<em><a href="https://doi.org/10.1145/3478432.3499048" target="_blank">Using Deep Learning to Localize Errors in Student Code Submissions</a> </em> 
-[<a href="javascript:;" onclick="$(&quot;#abs_fujimor-sigcse2022&quot;).toggle()">abs</a>] [<a href="data/sigcse22/slides.pdf" target="_blank">slides</a>] <br>
-<a href="https://shionfujimori.github.io" target="_blank">Shion&nbsp;Fujimori</a>, <strong>Mohamed&nbsp;Harmanani</strong>, <a href="https://www.linkedin.com/in/19owais" target="_blank">Owais&nbsp;Siddiqui</a>, and <a href="https://lisazhang.ca" target="_blank">Lisa&nbsp;Zhang</a><br>
-SIGCSE 2022  <br>
-
-<div id="abs_fujimor-sigcse2022" style="text-align: justify; display: none">
+  <tr>
+    <td class="col-md-3"><a><img src="images/publications/fujimor-sigcse2022.png" onerror="this.onerror=null;this.src='images/projects/alt.jpg';"></a> </td>
+    <td>
+      <strong>Using Deep Learning to Localize Errors in Student Code Submissions</strong><br>
+      S. Fujimori, <strong>M. Harmanani</strong>, O. Siddiqui, and L. Zhang<br>
+      Proceedings of the 53rd ACM Technical Symposium on Computer Science Education (SIGCSE 2022)
+      <br>
+      [<a href="javascript: none" onclick="$(&quot;#abstract_sigsce22&quot;).toggle()">abs</a>]
+      [<a href="https://doi.org/10.1145/3478432.3499048" target="_blank">paper</a>]
+      [<a href="data/sigcse22/slides.pdf" target="_blank">slides</a>]
+      <br>
+      <div id="abstract_sigsce22" style="text-align: justify; display: none">
         <p>We explore RNN and CodeBERT deep learning models that highlight errors in student submissions to Python coding problems. 
           We find that a standard automatic metric like AUC does not correspond well to human evaluation, 
           and that the scale of the benefits of transfer learning and pre-training are only seen when using human evaluation. </p>
-      </div>
-
-</td>
-</tr>
+      </div>	
+    </td>
+  </tr>
 
 </tbody></table>
 
-<!--<h2 id="-teaching"><i class="fa fa-chalkboard"></i> Teaching</h2>
+<h2 id="-teaching"><i class="fa fa-chalkboard-user"></i> Teaching</h2>
 <table class="table table-hover">
-<tbody><tr>
-  <td style="padding-right:0"><strong>Course Name</strong> (CISC XXX at Queen's), Teaching Assistant</td>
-  <td class="col-md-2" style="text-align:right; padding-left:0;">Fall 2022</td>
-</tr>
-</tbody></table>-->
+  <tbody>
+    <tr>
+      <td class="col-md-1">W2023</td>
+      <td><strong>Intro to Data Analytics</strong> (Queen's CISC 151), Teaching Assistant</td>
+    </tr>
+</tbody></table>
 
 
 <h2 id="-honors--awards"><i class="fa fa-award"></i> Honors &amp; Awards</h2>
 <table class="table table-hover">
-<tbody><tr>
+<tbody>
+<tr>
+<td>
+  <div style="float: right;">2023</div>
+  <div>Vector Institute Research Grant</div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Awarded to Vector researchers to support research in AI/ML</div>
+</td>
+</tr>
+<tr>
+<td> 
+  <div style="float: right;">2023</div>
+  <div> NSERC MediCREATE Central Line Challenge, 2nd Place </div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Developed a deep learning model for (1) surgical tool detection and (2) task identification in surgical videos</div>
+</td>
+</tr>
+<tr>
   <td>
   <div style="float: right">2022</div>
   <div>
     Robert Sutherland Fellowship
   </div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Awarded to distinguished students at Queen's belonging to a minority group</div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2019</td> -->
 </tr>
@@ -278,8 +326,9 @@ SIGCSE 2022  <br>
   <td>
   <div style="float: right">2022</div>
   <div>
-    NSERC MediCREATE Grant
+    NSERC MediCREATE Training Award
   </div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Awarded to students in the NSERC CREATE training program in medical informatics</div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2019</td> -->
 </tr>
@@ -289,6 +338,7 @@ SIGCSE 2022  <br>
   <div>
     University of Toronto Undergraduate Research Grant
   </div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Awarded to students in good academic standing to present at a conference</div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2019</td> -->
 </tr>
@@ -298,6 +348,7 @@ SIGCSE 2022  <br>
   <div>
     University of Toronto Maths & Computer Science Honour Roll
   </div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Awarded to students with a grade of 90% or greater in 3+ Math & Computer Science courses at the University of Toronto in 2020-2021</div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2016&nbsp;-&nbsp;2019</td> -->
 </tr>
@@ -307,6 +358,7 @@ SIGCSE 2022  <br>
   <div>
     Excellence 300 Award in Philosophy
   </div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Awarded to the student with the highest mark in a 300-level Philosophy class</div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2016&nbsp;-&nbsp;2019</td> -->
 </tr>
@@ -316,6 +368,7 @@ SIGCSE 2022  <br>
   <div>
     University of Toronto Entrance Award
   </div>
+  <div style="color:grey;font-size:1.3rem;margin: 0">Awarded to distinguished students admitted into the Faculty of Arts & Science </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2016&nbsp;-&nbsp;2019</td> -->
 </tr>
@@ -329,7 +382,7 @@ SIGCSE 2022  <br>
 </tr>
 <tr>
   <td class="col-md-2">Frameworks</td>
-  <td> PyTorch, NumPy, Pandas, SciPy, TensorFlow, Seaborn, React, Node.js </td>
+  <td> PyTorch, scikit-learn, Keras, NumPy, Pandas, SciPy, TensorFlow, Seaborn, React, Node.js </td>
 </tr>
 <tr>
   <td class="col-md-2">Toolbox</td>
@@ -337,22 +390,9 @@ SIGCSE 2022  <br>
 </tr>
 </tbody></table>
 
-<!--
-<h2 id="-lang"><i class="fa fa-wrench"></i> Languages </h2>
-<table class="table table-hover">
-<tbody><tr>
-  <td class="col-md-2">Fluent</td>
-  <td> English, Français, العربيّة</td>
-</tr>
-<tr>
-  <td class="col-md-2">Beginner</td>
-  <td> Español, 日本語 </td>
-</tr>
-</tbody></table> -->
-
 <hr>
 
-<p>Last updated on 2022-09-20 </p>
+<p>Last updated on 2023-08-02 </p>
 
 
     </div>
