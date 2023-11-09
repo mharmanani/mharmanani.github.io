@@ -21,3 +21,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     margin: 1em;
 }
+
+.pub-img {
+    border: none;
+}
+
+.pub-row {
+    vertical-align: middle !important;
+}
