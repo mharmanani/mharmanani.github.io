@@ -2,6 +2,14 @@ body {
     padding-top: 70px;
 }
 
+.pub-authors, .pub-venue, .pub-links, .pub-abs {
+    font-size: 15px;
+}
+
+.pub-abs {
+    font-size: 14px;
+}
+
 h1 {
     font-size: 2em;
     margin: 0.2em 0;
