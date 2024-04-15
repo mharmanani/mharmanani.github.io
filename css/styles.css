@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital,wght@0,400;0,700;1,400&display=swap');
+
 ::-moz-selection { /* Code for Firefox */
     color: white;
     background: #4582ec;
@@ -6,6 +9,45 @@
 ::selection {
     color: white;
     background: #4582ec;
+}
+
+/*h1, h2, h3, .name-main {
+    font-family: 'IM Fell DW Pica', serif !important;
+    font-style: italic;
+    text-transform: lowercase;
+}*/
+
+h1, h2, h3, .name-main {
+    font-family: 'EB Garamond', serif !important;
+    font-weight: 500;
+}
+
+tr {
+    padding: 1em;
+}
+
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.navbar-header {
+    font-family: 'EB Garamond', serif;
+}
+
+.navbar-header > a {
+    font-family: 'EB Garamond', serif;
+}
+.navbar-nav > li > a {
+    font-family: 'EB Garamond', serif;
+}
+.navbar-nav > li > a:hover {
+    font-family: 'EB Garamond', serif;
+    border: 1px solid white;
+    color: #134fb8 !important;
+}
+.navbar-nav > li > a > i:hover {
+    color: #134fb8;
 }
 
 body::-webkit-scrollbar {
@@ -22,10 +64,24 @@ body::-webkit-scrollbar-thumb {
     margin: 1em;
 }
 
+.pub-title {
+    font-weight: bold;
+}
+
 .pub-img {
     border: none;
 }
 
 .pub-row {
     vertical-align: middle !important;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+td{
+    border: none !important;
+}
+tr:hover, td:hover {
+    background-color: #fff !important;
 }
