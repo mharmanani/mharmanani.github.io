@@ -52,12 +52,13 @@
 						</button>
 					</div>
 					<div class="navbar-collapse collapse" id="navbar-main">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav"><!--
               <li>
-								<a href="https://mharmanani.medium.com"><i class="fa-brands fa-medium"></i> Blog</a>
+                <a href="/blog.html">
+                  <i class="fa fa-fountain-pen"></i>Blog</a>
 							</li>
 							<li>
-								<a href="/miscellanous">Misc.</a>
+								<a href="/miscellanous">Misc.</a>-->
 							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="font-size: 1.5em">
@@ -83,14 +84,17 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-1 vcenter idxHdr">
-      <div style="font-size: 2em; color: #4582ec; font-weight: bold; padding-bottom: 0.3em;">
-        Mohamed Harmanani <span style="font-size: 0.5em; color: #888; text-align: right;"> <b>(They/He)</b> </span>
+      <div class="name-main" style="font-size: 2.5em; color: #4582ec; font-weight: bold; padding-bottom: 0.3em;">
+        Mohamed Harmanani 
       </div>
       <div style="font-size: 1.2em;">
-        Graduate Researcher, Machine Learning 
+        Graduate Researcher, Deep Learning/Medical Imaging
       </div>
       <div style="font-size: 1.2em; padding-top: 0.3em;">
-        <a href="https://medi.cs.queensu.ca"> Med-i Lab</a> @ Queen's University
+        <a href="https://vectorinstitute.ai">Vector Institute</a>, Toronto, Canada
+      </div>
+      <div style="font-size: 1.2em; padding-top: 0.3em;">
+        <a href="https://medi.cs.queensu.ca"> Med-<i>i</i> Lab</a>, Queen's University
       </div>
       <br>
 
@@ -114,12 +118,12 @@
             <i class="fa fa-envelope"></i></a>
         </li>
         <li>
-          <a href="https://twitter.com/harmananim" target="_blank">
-          <i class="fa-brands fa-twitter"></i></a>
-        </li>
-        <li>
           <a href="https://scholar.google.com/citations?hl=en&user=dNDG5CgAAAAJ" target="_blank">
           <i class="ai ai-google-scholar"></i></a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/profile/Mohamed-Harmanani" target="_blank">
+            <i class="ai ai-researchgate"></i></a>
         </li>
         <li>
           <a href="http://www.linkedin.com/in/mharmanani" target="_blank">
@@ -137,7 +141,7 @@
 <hr>
 
 <p align="justify"> 
-  I am a MSc candidate at Queen's University as well as a Research Assistant in the <a href="https://medi.cs.queensu.ca">Medical Informatics (Med-i)</a> laboratory, advised by Dr. Parvin Mousavi. 
+  I am a MSc candidate at Queen's University as well as a Research Assistant in the <a href="https://medi.cs.queensu.ca">Medical Informatics (Med-<i>i</i>)</a> laboratory, advised by Dr. Parvin Mousavi. 
   My main research interests are in computer vision, deep learning, and medical imaging. More specifically, my research focuses on using deep learning to detect prostate cancer in real-time during ultrasound-guided biopsy procedures. 
   I am a recipient of the Robert Sutherland Fellowship at Queen's and the <a href="https://medicreate.cs.queensu.ca/">NSERC MediCREATE</a> training award. 
 </p>
@@ -239,8 +243,79 @@
 
 <tbody class="publications-body">
 
+  <tr><td></td></tr>
   <tr>
-    <td class="col-md-3 pub-row">
+    <td>
+      <img class="pub-img" src="images/publications/ipcai24/lensepro1 copy.png" width="269">
+    </td>
+    <td>
+
+      <div class="pub-title">
+        <strong>LensePro: Label Noise-Tolerant Prototype-Based Network for Improving Cancer Detection in Prostate Ultrasound with Limited Annotations</strong><br>
+      </div>
+      
+      <div class="pub-authors">
+        MNN. To, F. Fooladgar*, PFR. Wilson*, <strong>M. Harmanani</strong>*, M. Gilany, S. Sojoudi, A. Jamzad, S. Chang, P. Black, <br>P. Mousavi<sup>†</sup>, P Abolmaesumi<sup>†</sup>
+      </div>
+
+      <div class="pub-venue">
+        <i> Int J of Computer Assisted  Radiology and Surgery (IJCARS), 2024 </i><br>
+      </div>
+
+      <div class="pub-links">
+        [<a href="javascript: none" onclick="$(&quot;#abstract_ipcai24&quot;).toggle()">abs</a>]
+        [<a href="https://link.springer.com/article/10.1007/s11548-024-03104-3" target="_blank">paper</a>]
+      </div>
+      
+      <div id="abstract_ipcai24" class="pub-abs" style="text-align: justify; display: none">
+        <p>This study presents LensePro, a unified method that not only excels in label efficiency but also demonstrates robustness against label noise and OOD data. LensePro comprises two key stages: first, self-supervised learning to extract high-quality feature representations from abundant unlabeled TRUS data, and second, label noise-tolerant prototype-based learning to classify the extracted features.
+        </p>
+      </div>	
+    </td>
+  </tr>
+
+  <tr><td></td></tr>
+  <tr>
+    <td>
+      <img class="pub-img" src="images/publications/ijcars24/fig_heatmaps_2 copy.png" width="269">
+    </td>
+    <td>
+      <div class="pub-title">
+        <strong>Towards Confident Prostate Cancer Detection using Ultrasound: A Multi-Center Study</strong><br>
+      </div>
+  
+      <div class="pub-authors">
+        PFR. Wilson, <strong>M. Harmanani</strong>, MNN. To, M. Gilany, A. Jamzad, F. Fooladgar, B. Wodlinger, P. Abolmaesumi, P. Mousavi <br>
+      </div>
+  
+      <div class="pub-venue">
+        <i> Int J of Computer Assisted  Radiology and Surgery (IJCARS), 2024 (to appear) </i><br>
+      </div>
+  
+      <div class="pub-links">
+        [<a href="javascript: none" onclick="$(&quot;#abstract_ijcars24&quot;).toggle()">abs</a>]
+        [<span style="color: black;" target="_blank">paper</span>]
+      </div>
+  
+      <div id="abstract_ijcars24" class="pub-abs" style="text-align: justify; display: none">
+        <p>
+          Prostate ultrasound data is highly heterogeneous due to variability in tissue
+          types and the cancer appearance in images, making the development of robust
+          models that can generalize to new patients and clinical settings, challenging.
+          A viable model requires not only accurate cancer predictions but also effective
+          uncertainty calibration, i.e. understanding when the predictions are likely to be
+          correct. Previous studies on uncertainty calibration for PCa detection often rely
+          on limited or single center datasets which may not adequately capture real-world
+          data variability. We aim to establish realistic benchmarks for PCa detection using
+          a multi-centre, diverse dataset to better assess the clinical utility of this tool.
+        </p>
+      </div>
+    </td>
+  </tr>
+
+  <tr><td></td></tr>
+  <tr>
+    <td class="col-md-3">
       <img class="pub-img" src="images/publications/vit_v_cct_002.png" width="269">
     </td>
     <td>
@@ -250,16 +325,17 @@
       </div>
       
       <div class="pub-authors">
-        <strong>M. Harmanani</strong>, P. F. R. Wilson, F. Fooladgar, A. Jamzad, M. Gilany, M. N. N. To, B. Wodlinger, P. Abolmaesumi, P. Mousavi <br>
+        <strong>M. Harmanani</strong>, PFR. Wilson, F. Fooladgar, A. Jamzad, M. Gilany, MNN. To, B. Wodlinger, P. Abolmaesumi, P. Mousavi <br>
       </div>
 
       <div class="pub-venue">
-        <i> SPIE Medical Imaging 2024 </i> (to appear) <br>
+        <i> SPIE Medical Imaging 2024 </i><br>
       </div>
 
       <div class="pub-links">
         [<a href="javascript: none" onclick="$(&quot;#abstract_spie24&quot;).toggle()">abs</a>]
-        [<span style="color: black;" target="_blank">paper</span>]
+        [<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12928/1292815/Benchmarking-image-transformers-for-prostate-cancer-detection-from-ultrasound-data/10.1117/12.3006049.short#_=_" target="_blank">paper</a>]
+        [<a href="https://arxiv.org/abs/2403.18233" target="_blank">arXiv</a>]
       </div>
       
       <div id="abstract_spie24" class="pub-abs" style="text-align: justify; display: none">
@@ -276,8 +352,10 @@
     </td>
   </tr>
 
+
+  <tr><td></td></tr>
   <tr>
-    <td class="col-md-3 pub-row">
+    <td class="col-md-3">
       <img class="pub-img" src="images/publications/spark_remake.png" width="269">
     </td>
     <td>
@@ -296,7 +374,7 @@
 
       <div class="pub-links">
         [<a href="javascript: none" onclick="$(&quot;#abstract_spark23&quot;).toggle()">abs</a>]
-        [<a href="https://arxiv.org/abs/2308.08190" target="_blank">paper</a>]
+        [<a href="https://arxiv.org/abs/2308.08190" target="_blank">arXiv</a>]
       </div>
 
       <div id="abstract_spark23" class="pub-abs" style="text-align: justify; display: none">
@@ -310,8 +388,10 @@
     </td>
   </tr>
 
+
+  <tr><td></td></tr>
   <tr>
-    <td class="col-md-3 pub-row">
+    <td class="col-md-3">
       <img class="pub-img" src="images/publications/sigcse22.png" 
         style="border: 0.5px solid #050938; padding: 0;" width="269">
     </td>
@@ -326,7 +406,7 @@
       </div>
 
       <div class="pub-venue">
-        <i>The 53rd ACM Technical Symposium on Computer Science Education (SIGCSE 2022)</i>
+        <i>ACM Technical Symposium on Computer Science Education (SIGCSE 2022)</i>
       </div>
 
       <div class="pub-links">
@@ -342,6 +422,7 @@
       </div>	
     </td>
   </tr>
+
 
 </tbody></table>
 
@@ -366,61 +447,6 @@
     </tr>
 </tbody></table>
 
-<h2 id="-honors--awards"><i class="fa fa-map"></i> Abstracts &amp; Presentations</h2>
-  <table class="table table-hover">
-    <tbody>
-    <tr>
-      <td class="col-md-3 pub-row">
-        <img class="pub-img" src="images/publications/imno24/new_imno_fig.png" width="269">
-      </td>
-      <td>
-
-        <div class="pub-title">
-          <strong>Multi-Objective Multiple Instance Learning for Improving Prostate Cancer Detection in Ultrasound</strong><br>
-        </div>
-
-        <div class="pub-authors">
-          <strong>M. Harmanani</strong>, P. F. R. Wilson, F. Fooladgar, A. Jamzad, M. Gilany, M. N. N. To, B. Wodlinger, P. Abolmaesumi, P. Mousavi <br>
-        </div>
-
-        <div class="pub-venue">
-          <i> Imaging Network of Ontario (ImNO 2024)</i> (to appear) <br>
-        </div>
-
-        <div class="pub-links">
-          [pdf]
-          [slides]
-        </div>
-
-      </td>
-    </tr>
-
-    <tr>
-      <td class="col-md-3 pub-row">
-        <img class="pub-img" src="images/publications/imno24/ttt_ss1.png" width="269" style="border: 1px solid #b2b2b2; border-radius: 16px;">
-      </td>
-      <td>
-
-        <div class="pub-title">
-          <strong>Test-Time Training for Prostate Cancer Detection: Addressing Distribution Shift with Self-Supervised Learning</strong><br>
-        </div>
-
-        <div class="pub-authors">
-          M. Gilany, P. F. R. Wilson, A. Jamzad, <strong>M. Harmanani</strong>,  M. N. N. To, B. Wodlinger, P. Abolmaesumi, P. Mousavi <br>
-        </div>
-
-        <div class="pub-venue">
-          <i> Imaging Network of Ontario (ImNO 2024)</i> (to appear) <br>
-        </div>
-
-        <div class="pub-links">
-          [pdf]
-          [slides]
-        </div>
-
-      </td>
-    </tr>
-    </tbody></table>
 
 <h2 id="-honors--awards"><i class="fa fa-award"></i> Honors &amp; Awards</h2>
 <table class="table table-hover">
@@ -504,22 +530,22 @@
 <h2 id="-skills"><i class="fa fa-wrench"></i> Skills</h2>
 <table class="table table-hover">
 <tbody><tr>
-  <td class="col-md-2">Programming</td>
+  <td class="col-md-2"><b>Programming</b></td>
   <td> Python, SQL, Java, R, TypeScript, C, C++, Haskell, Make </td>
 </tr>
 <tr>
-  <td class="col-md-2">Frameworks</td>
+  <td class="col-md-2"><b>Frameworks</b></td>
   <td> PyTorch, scikit-learn, Keras, NumPy, Pandas, SciPy, TensorFlow, Seaborn, React, Node.js </td>
 </tr>
 <tr>
-  <td class="col-md-2">Toolbox</td>
+  <td class="col-md-2"><b>Toolbox</b></td>
   <td> BigQuery, Google Dataflow, GCP, AWS (S3, SageMaker), Linux, DVC, vim, git, zsh, Jupyter </td>
 </tr>
 </tbody></table>
 
 <hr>
 
-<p>Last updated on 2024-01-20 </p>
+<p>Last updated on 2024-04-15 </p>
 
 
     </div>
