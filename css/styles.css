@@ -76,6 +76,10 @@ body::-webkit-scrollbar-thumb {
     vertical-align: middle !important;
 }
 
+.pub-awards {
+    color: red;
+}
+
 table, th, td {
     border-collapse: collapse;
 }
