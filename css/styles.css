@@ -89,3 +89,32 @@ td{
 tr:hover, td:hover {
     background-color: #fff !important;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 430px) {
+
+    .pub-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 89vw;
+    }
+
+    .exp-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pub-separator {
+        display: none;
+    }
+
+    .footer {
+        margin-bottom: 10vh;
+    }
+}
