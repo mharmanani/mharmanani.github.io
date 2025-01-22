@@ -141,7 +141,7 @@
 <hr>
 
 <p align="justify"> 
-  I am a PhD Student at the <a href="https://vectorinstitute.ai">Vector Institute</a> and <a href="https://queensu.ca">Queen's University</a>, supervised by Dr. <a href="https://vectorinstitute.ai/team/parvin-mousavi/" target="_blank">Parvin Mousavi</a>. My main research interests are in Computer Vision, Deep Learning, and Trustworthy AI in Healthcare and Medicine. More specifically, my research focuses on designing, training, and deploying trustworthy deep learning models for disease diagnosis and computer-assisted interventions at the point-of-care.
+  I am a PhD Student at the <a href="https://vectorinstitute.ai">Vector Institute</a> and <a href="https://queensu.ca">Queen's University</a>, supervised by Dr. <a href="https://vectorinstitute.ai/team/parvin-mousavi/" target="_blank">Parvin Mousavi</a>. My main research interests are in Computer Vision, Deep Learning, and Trustworthy AI in Healthcare and Medicine. More specifically, my research focuses on designing, training, and deploying trustworthy deep learning models for disease diagnosis and computer-assisted interventions.
   I am also a recipient of the <a href="https://www.queensu.ca/vpr/funding/internal-programs/bruce-mitchell-research-program">Bruce Mitchell Research Fellowship</a>. 
   Previously, I completed my MSc in Artificial Intelligence at Queen's and my HBSc in Computer Science and Philosophy at the University of Toronto. I am also a former recipient of the Robert Sutherland Fellowship at Queen's and a graduate of the <a href="https://medicreate.cs.queensu.ca/">NSERC MediCREATE</a> training program. 
 </p>
@@ -281,6 +281,43 @@
     <tr class="pub-separator"><td></td></tr>
     <tr class="pub-wrapper">
       <td>
+        <img class="pub-img" src="images/publications/isbi25/cinepro-sm.png" width="269">
+      </td>
+      <td>
+        <div class="pub-title">
+          <strong>Cinepro: Robust Training of Foundation Models for Cancer Detection in Prostate Ultrasound Cineloops</strong><br>
+        </div>
+    
+        <div class="pub-authors">
+          <strong>M. Harmanani</strong>, A. Jamzad*, MNN. To*, PFR. Wilson*, Z. Guo, F.Fooladgar, S. Sojoudi, M. Gilany, P. Black, S. Chang, M. Leveridge, R. Siemens, P. Abolmaesumi, P. Mousavi <br>
+        </div>
+    
+        <div class="pub-venue">
+          <i> IEEE International Symposium on Biomedical Imaging (ISBI), 2025 </i><br>
+        </div>
+  
+        <div class="pub-awards">
+        </div>
+    
+        <div class="pub-links">
+          [<a href="javascript: none" onclick="$(&quot;#abstract_cinepro&quot;).toggle()">abs</a>]
+          [paper]
+          [<a href="https://arxiv.org/abs/2501.12331">arXiv</a>]
+        </div>
+    
+        <div id="abstract_cinepro" class="pub-abs" style="text-align: justify; display: none">
+          <p>
+            We introduce Cinepro, a novel framework that strengthens foundation models' ability to localize PCa in ultrasound cineloops. 
+            Cinepro adapts robust training by integrating the proportion of cancer tissue reported by pathology in a biopsy core into its loss function to address label noise, providing a more nuanced supervision. Additionally, it leverages temporal data across multiple frames to apply robust augmentations, enhancing the model’s ability to learn stable cancer-related features. 
+            Cinepro demonstrates superior performance on a multi-center prostate ultrasound dataset, achieving an AUROC of 77.1% and a balanced accuracy of 83.8%, surpassing current benchmarks. These findings underscore Cinepro's promise in advancing foundation models for weakly labeled ultrasound data.
+          </p>
+        </div>
+      </td>
+    </tr>
+
+    <tr class="pub-separator"><td></td></tr>
+    <tr class="pub-wrapper">
+      <td>
         <img class="pub-img" src="images/publications/mlmi24/main.png" width="269">
       </td>
       <td>
@@ -299,7 +336,7 @@
   
         <div class="pub-links">
           [<a href="javascript: none" onclick="$(&quot;#abstract_mlmi24&quot;).toggle()">abs</a>]
-          [paper]
+          [<a href="https://link.springer.com/chapter/10.1007/978-3-031-73284-3_36">paper</a>]
           [<a href="https://arxiv.org/abs/2407.12697" target="_blank">arXiv</a>]
         </div>
         
@@ -334,12 +371,15 @@
         </div>
   
         <div class="pub-links">
-          [<a href="javascript: none" onclicfk="$(&quot;#abstract_miccai24&quot;).toggle()">abs</a>]
-          [paper][arXiv]
+          [<a href="javascript: none" onclick="$(&quot;#abstract_miccai24&quot;).toggle()">abs</a>]
+          [<a href="https://papers.miccai.org/miccai-2024/paper/2644_paper.pdf">paper</a>]   
         </div>
         
         <div id="abstract_miccai24" class="pub-abs" style="text-align: justify; display: none">
-          <p>
+          <p>We propose ProstNFound, a method that empowers foundation models with domain-specific knowledge pertinent to ultrasound imaging and PCa. 
+            Specialized auxiliary networks embed high-resolution textural features and clinical markers which are then presented to the network as prompts. 
+            We demonstrate significant improvements over the state-of-the-art in PCa detection. ProstNFound achieves 90% sensitivity at 40% specificity, performance that
+            is competitive with that of expert radiologists reading multi-parametric MRI or micro-ultrasound images, suggesting significant promise for clinical application.
           </p>
         </div>	
       </td>
@@ -532,9 +572,53 @@
   
   </tbody></table>
 
+  <h2 id="-abstracts"><i class="fa fa-sticky-note"></i> Abstracts &amp; Presentations</h2>
+  <table class="table table-hover">
+    <tbody>
+
+      <tr>
+        <td>
+          <div style="float: right;">IGTxImNO 2025</div>
+          <div><strong>Involvement-Aware Foundation Models for Prostate Cancer Detection in Ultrasound</strong> [<a href="data/papers/harmanani_imno25.pdf">pdf</a>]</div>
+          <div class="pub-authors"><strong>M. Harmanani</strong>, A. Jamzad, MNN. To, PFR. Wilson, Z. Guo, F.Fooladgar, S. Sojoudi, M. Gilany, P. Black, S. Chang, M. Leveridge, R. Siemens, P. Abolmaesumi, P. Mousavi</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="float: right;">ImNO 2024</div>
+          <div><strong>Multi-Objective Multiple Instance Learning for Improving Prostate Cancer Detection in Ultrasounds</strong> [<a href="data/papers/harmanani_imno24.pdf">pdf</a>] </div>
+            <div class="pub-authors">
+              <strong>M. Harmanani</strong>, PFR. Wilson, F. Fooladgar, A. Jamzad, M. Gilany, MNN. To, B. Wodlinger, P. Abolmaesumi, P. Mousavi <br>
+            </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="float: right;">ImNO 2024</div>
+          <div><strong>Test-Time Training for Prostate Cancer Detection: Addressing Distribution Shifts with Self-Supervised Learning</strong> [<a href="data/papers/gilany_imno24.pdf">pdf</a>] </div>
+            <div class="pub-authors">
+              M. Gilany, PFR. Wilson, A. Jamzad, <strong>M. Harmanani</strong>, MNN. To, B. Wodlinger, P. Abolmaesumi, P. Mousavi <br>
+            </div>
+        </td>
+      </tr>
+
+  </tbody></table>
+  
+
 <h2 id="-teaching"><i class="fa fa-book-open-reader"></i> Teaching</h2>
 <table class="table table-hover">
   <tbody>
+
+    <tr>
+      <td class="col-md-1">W2025</td>
+      <td class="exp-item">
+        <span><strong>Teaching Assistant</strong>,</span> 
+        <span>Human-Computer Interaction </span>
+        <span>(CISC 325) at Queen's</span>
+      </td>
+    </tr>
 
     <tr>
       <td class="col-md-1">F2024</td>
