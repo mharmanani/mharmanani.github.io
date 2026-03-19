@@ -3,20 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <script>
-    const correctBase = "/MedCBR";
+    const repoMap = {
+      "myrepo": "MyRepo"
+    };
+
     const path = location.pathname;
+    const parts = path.split("/").filter(Boolean);
 
-    if (path.toLowerCase().startsWith(correctBase.toLowerCase())) {
-      const rest = path.slice(correctBase.length);
-      const canonicalPath = correctBase + rest;
+    if (parts.length > 0) {
+      const first = parts[0].toLowerCase();
 
-      if (path !== canonicalPath) {
-        location.replace(canonicalPath + location.search + location.hash);
-      } else {
-        location.replace(correctBase + "/" + location.search + location.hash);
+      if (repoMap[first]) {
+        parts[0] = repoMap[first];
+
+        let target = "/" + parts.join("/");
+        if (parts.length === 1) target += "/";
+
+        if (target !== path) {
+          location.replace(target + location.search + location.hash);
+        }
       }
-    } else {
-      location.replace(correctBase + "/" + location.search + location.hash);
     }
   </script>
 </head>
